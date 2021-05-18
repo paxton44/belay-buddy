@@ -16,7 +16,8 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/readingdb",
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/climbing",
+// mongodb+srv://wylieurig:Wynona1@@cluster0.p9xz2.mongodb.net/climbing?retryWrites=true&w=majority
 {
   useNewUrlParser: true,
   useUnifiedTopology: true,
