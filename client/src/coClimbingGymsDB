@@ -1,0 +1,449 @@
+/* 1 */
+{
+    "_id" : ObjectId("60a59b5edeaf0455632df57b"),
+    "GymName" : "Apex Center",
+    "City" : "Arvada, CO",
+    "PhoneNumber" : "303-424-2739",
+    "Address" : "13150 W. 72nd Ave.Arvada, CO 80005"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("60a59bd8deaf0455632df58d"),
+    "GymName" : "Red Brick Climbing Gym",
+    "City" : "Aspen, CO",
+    "PhoneNumber" : "970-544-5834",
+    "Address" : "13150 W. 72nd Ave.Arvada, CO 80005"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("60a59bebdeaf0455632df591"),
+    "GymName" : "Aspen Recreation Center Climbing Tower",
+    "City" : "Aspen, CO",
+    "PhoneNumber" : "970-544-4100",
+    "Address" : "110 East Hallam Suite 135 Aspen, CO 81611"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("60a59c68deaf0455632df59d"),
+    "GymName" : "Boulder Rock Club",
+    "City" : "Boulder, CO",
+    "PhoneNumber" : "800-836-4008 ext. 4",
+    "Address" : "2829 Mapleton Ave. Boulder, CO 80301"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("60a59c82deaf0455632df5a9"),
+    "GymName" : "Colorado Athletic Training School",
+    "City" : "Boulder, CO",
+    "PhoneNumber" : "303-939-9699",
+    "Address" : "2400 30th Street Boulder, CO 80302"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("60a59ca1deaf0455632df5ad"),
+    "GymName" : "Movement Climbing + Fitness",
+    "City" : "Boulder, CO",
+    "PhoneNumber" : "303-443-1505",
+    "Address" : "2845 Valmont Rd. Boulder, CO 80301"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("60a59caadeaf0455632df5b5"),
+    "GymName" : "The Spot Bouldering Gym",
+    "City" : "Boulder, CO",
+    "PhoneNumber" : "303-379-8806",
+    "Address" : "3240 Prairie Ave. Boulder, CO 80301"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("60a59cbfdeaf0455632df5b9"),
+    "GymName" : "University of Colorado Boulder Student Recreation Center",
+    "City" : "Boulder, CO",
+    "PhoneNumber" : "303-492-6880",
+    "Address" : "1855 Pleasant St. Boulder, CO 80302"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("60a59ccedeaf0455632df5bd"),
+    "GymName" : "East Boulder Community Center",
+    "City" : "Boulder, CO",
+    "PhoneNumber" : "303-441-4400",
+    "Address" : "5660 Sioux Dr. Boulder, CO 80303"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("60a59d2cdeaf0455632df5c9"),
+    "GymName" : "ABC Kids Climbing",
+    "City" : "Boulder, CO",
+    "PhoneNumber" : "303-443-5437",
+    "Address" : "0861 Maroon Creek Rd Aspen, CO 81611"
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("60a59d42deaf0455632df5cd"),
+    "GymName" : "Breckenridge Recreation Center",
+    "City" : "Breckenridge, CO",
+    "PhoneNumber" : "970-453-1734",
+    "Address" : "880 Airport Road Breckenridge, CO 80424"
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("60a59d4fdeaf0455632df5d1"),
+    "GymName" : "Breckenridge Outdoor Education Center",
+    "City" : "Breckenridge, CO",
+    "PhoneNumber" : "970-453-6422",
+    "Address" : "524 Wellington Road Breckenridge, CO 80424"
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("60a59d59deaf0455632df5d7"),
+    "GymName" : "Alpine Villa Tuscan Retreat",
+    "City" : "Breckenridge, CO",
+    "PhoneNumber" : "970-453-4924",
+    "Address" : "2345 Tiger Road Breckenridge, CO 80424"
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("60a59d65deaf0455632df5dd"),
+    "GymName" : "Paul Derda Recreation Center Climbing Gym",
+    "City" : "Broomfield, CO",
+    "PhoneNumber" : "303-460-6900",
+    "Address" : "13201 Lowell Blvd. Broomfield, CO 80020"
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("60a59d70deaf0455632df5e1"),
+    "GymName" : "Lakeshore Athletic Club Climbing Wall",
+    "City" : "Broomfield, CO",
+    "PhoneNumber" : "303-729-2580",
+    "Address" : "300 Summit Boulevard Broomfield, CO 80021"
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("60a59d85deaf0455632df5e5"),
+    "GymName" : "Adventure Unlimited Ranches Rock Gym",
+    "City" : "Buena Vista",
+    "PhoneNumber" : "888-543-4849",
+    "Address" : "18325 County Road #366 Buena Vista, CO 81211"
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("60a5c882deaf0455632df95d"),
+    "GymName" : "Trails Recreation Center",
+    "City" : "Centennial",
+    "PhoneNumber" : "303-269-8400",
+    "Address" : "16799 E. Lake Ave. Centennial, CO 80016"
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("60a5c8cddeaf0455632df966"),
+    "GymName" : "ROCK’n & JAM’n 2",
+    "City" : "Centennial",
+    "PhoneNumber" : "303-766-5462",
+    "Address" : "7390 S. Fraser Street (Unit E) Centennial, CO 80112"
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("60a5c8d8deaf0455632df96a"),
+    "GymName" : "Life Time Fitness",
+    "City" : "Centennial",
+    "PhoneNumber" : "720-489-1400",
+    "Address" : "5000 E Dry Creek Road Centennial, CO 80122"
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("60a5c8e3deaf0455632df96e"),
+    "GymName" : "CityROCK Colorado Springs",
+    "City" : "Colorado Springs",
+    "PhoneNumber" : "719-634-9099",
+    "Address" : "21 North Nevada Avenue Colorado Springs, CO 80903"
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("60a5c8f4deaf0455632df97a"),
+    "GymName" : "Pure Bouldering Gym",
+    "City" : "Colorado Springs",
+    "PhoneNumber" : "719-633-5511",
+    "Address" : "1401 South 8th Street Colorado Springs, CO 80905"
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("60a5c906deaf0455632df97e"),
+    "GymName" : "Sport Climbing Center",
+    "City" : "Colorado Springs",
+    "PhoneNumber" : "719-260-1050",
+    "Address" : "4650 Northpark Drive Colorado Springs, CO 80918"
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("60a5c910deaf0455632df982"),
+    "GymName" : "Colorado College – Ritt Kellogg Climbing Gym",
+    "City" : "Colorado Springs",
+    "PhoneNumber" : "719-389-6803",
+    "Address" : "44 West Cache La Poudre Street Colorado Springs, CO 80903"
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("60a5c927deaf0455632df986"),
+    "GymName" : "Life Time Fitness",
+    "City" : "Colorado Springs",
+    "PhoneNumber" : "719-266-9900",
+    "Address" : "4410 Royal Pine Drive Colorado Springs, CO 80920"
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("60a5c951deaf0455632df98e"),
+    "GymName" : "Denver Bouldering Club – Central",
+    "City" : "Denver",
+    "PhoneNumber" : "303-351-5588",
+    "Address" : "2485 W. 2nd Avenue #18 Denver, CO 80223"
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("60a5c960deaf0455632df992"),
+    "GymName" : "Movement Climbing and Fitness Denver",
+    "City" : "Denver",
+    "PhoneNumber" : "720-476-7800",
+    "Address" : "1155 W 5th Ave. Denver, CO 80204"
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("60a5c993deaf0455632df99a"),
+    "GymName" : "Thrillseekers",
+    "City" : "Denver",
+    "PhoneNumber" : "303-733-8810",
+    "Address" : "1912 South Broadway Denver Denver, CO 80210"
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("60a5c99fdeaf0455632df99e"),
+    "GymName" : "REI–Denver Flagship Climbing Pinnacle",
+    "City" : "Denver",
+    "PhoneNumber" : "303-756-3100",
+    "Address" : "1416 Platte St Denver, CO 80202"
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("60a5ca2edeaf0455632df9b2"),
+    "GymName" : "Mountain Strong",
+    "City" : "Denver",
+    "PhoneNumber" : "720-460-1778",
+    "Address" : "5280 Broadway St Denver, CO 80216"
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("60a5ca37deaf0455632df9b6"),
+    "GymName" : "University of Denver – Coors Fitness Center",
+    "City" : "Denver",
+    "PhoneNumber" : "303-871-3908",
+    "Address" : "2201 E. Asbury Ave Denver, CO 80208"
+}
+
+/* 31 */
+{
+    "_id" : ObjectId("60a5ca4bdeaf0455632df9ba"),
+    "GymName" : "The Rock Lounge",
+    "City" : "Durango",
+    "PhoneNumber" : "970-764-4505",
+    "Address" : "111 E. 30th St Durango, CO 81301 970-764-4505"
+}
+
+/* 32 */
+{
+    "_id" : ObjectId("60a5ca69deaf0455632df9c2"),
+    "GymName" : "Fort Lewis College Climbing Wall",
+    "City" : "Durango",
+    "PhoneNumber" : "970-247-7293",
+    "Address" : "1000 Rim Drive Durango, CO 81301 970-247-7293"
+}
+
+/* 33 */
+{
+    "_id" : ObjectId("60a5ca81deaf0455632df9c6"),
+    "GymName" : "Purgatory Resort",
+    "City" : "Durango",
+    "PhoneNumber" : "970-385-2168",
+    "Address" : "1 Skier Place Durango, CO 81301"
+}
+
+/* 34 */
+{
+    "_id" : ObjectId("60a5ca91deaf0455632df9ca"),
+    "GymName" : "WECMRD Field House",
+    "City" : "Edwards",
+    "PhoneNumber" : "970-766-5555",
+    "Address" : "450 Miller Ranch Rd Edwards, CO 81632"
+}
+
+/* 35 */
+{
+    "_id" : ObjectId("60a5ca9adeaf0455632df9d2"),
+    "GymName" : "Earth Treks Englewood",
+    "City" : "Englewood",
+    "PhoneNumber" : "303-242-3555",
+    "Address" : "1050 W. Hampden Avenue Englewood, CO 80110"
+}
+
+/* 36 */
+{
+    "_id" : ObjectId("60a5cac1deaf0455632df9dd"),
+    "GymName" : "REI Englewood",
+    "City" : "Englewood",
+    "PhoneNumber" : "303-858-1726",
+    "Address" : "9637 E County Line Rd Englewood, CO 80112"
+}
+
+/* 37 */
+{
+    "_id" : ObjectId("60a5cacedeaf0455632df9e1"),
+    "GymName" : "Erie Community Center",
+    "City" : "Erie",
+    "PhoneNumber" : "303-926-2550",
+    "Address" : "450 Powers St. Erie, CO 80516"
+}
+
+/* 38 */
+{
+    "_id" : ObjectId("60a5cadedeaf0455632df9e9"),
+    "GymName" : "The Epic Climbing Gym at Estes Park Mountain",
+    "City" : "Estes Park",
+    "PhoneNumber" : "970-586-6548",
+    "Address" : "2050 Big Thompson Ave. Estes Park, CO 80517"
+}
+
+/* 39 */
+{
+    "_id" : ObjectId("60a5caeadeaf0455632df9ed"),
+    "GymName" : "Estes Park Center",
+    "City" : "Estes Park",
+    "PhoneNumber" : "970-586-3341",
+    "Address" : "2515 Tunnel Road Estes Park, CO 80511"
+}
+
+/* 40 */
+{
+    "_id" : ObjectId("60a5caf5deaf0455632df9f1"),
+    "GymName" : "Buchanan Park Recreation Center",
+    "City" : "Evergreen",
+    "PhoneNumber" : "720-880-1100",
+    "Address" : "32003 Ellingwood Trail Evergreen, CO 80439"
+}
+
+/* 41 */
+{
+    "_id" : ObjectId("60a5caffdeaf0455632df9f5"),
+    "GymName" : "Fort Collins Club",
+    "City" : "Fort Collins",
+    "PhoneNumber" : "970-224-2582",
+    "Address" : "1307 East Prospect Road Fort Collins, CO 80525"
+}
+
+/* 42 */
+{
+    "_id" : ObjectId("60a5cb06deaf0455632df9f9"),
+    "GymName" : "Inner Strength Rock Gym",
+    "City" : "Fort Collins",
+    "PhoneNumber" : "970-282-8118",
+    "Address" : "3713 South Mason Fort Collins, CO 80525"
+}
+
+/* 43 */
+{
+    "_id" : ObjectId("60a5cb0ddeaf0455632df9ff"),
+    "GymName" : "Miramont Lifestyle Fitness Climbing Wall",
+    "City" : "Fort Collins",
+    "PhoneNumber" : "970-672-4221",
+    "Address" : "1800 Heath Pkwy Fort Collins, CO 80524"
+}
+
+/* 44 */
+{
+    "_id" : ObjectId("60a5cb24deaf0455632dfa05"),
+    "GymName" : "Ascent Studio",
+    "City" : "Fort Collins",
+    "PhoneNumber" : "970-999-5596",
+    "Address" : "2150 Joseph Allen Drive Fort Collins, CO 80525"
+}
+
+/* 45 */
+{
+    "_id" : ObjectId("60a5cb2fdeaf0455632dfa09"),
+    "GymName" : "Colorado State University Student Recreation Center",
+    "City" : "Fort Collins",
+    "PhoneNumber" : "970-491-1669",
+    "Address" : "951 Meridian Ave Fort Collins, CO 80523"
+}
+
+/* 46 */
+{
+    "_id" : ObjectId("60a5cb3adeaf0455632dfa0d"),
+    "GymName" : "Fraser Valley Recreation Center",
+    "City" : "Fraser",
+    "PhoneNumber" : "970-726-8968",
+    "Address" : "1, Main St Fraser, CO 80442"
+}
+
+/* 47 */
+{
+    "_id" : ObjectId("60a5cb46deaf0455632dfa11"),
+    "GymName" : "Glenwood Springs Community Center",
+    "City" : "Glenwood",
+    "PhoneNumber" : "970-384-6301",
+    "Address" : "100 Wulfsohn Road Glenwood Springs, CO 81601"
+}
+
+/* 48 */
+{
+    "_id" : ObjectId("60a5cb4cdeaf0455632dfa1d"),
+    "GymName" : "Glenwood Canyon Resort",
+    "City" : "Glenwood",
+    "PhoneNumber" : "970-945-6737",
+    "Address" : "1308 County Road 129 Glenwood Springs, CO 81601"
+}
+
+/* 49 */
+{
+    "_id" : ObjectId("60a5cb54deaf0455632dfa21"),
+    "GymName" : "Glenwood Caverns Adventure Park",
+    "City" : "Glenwood",
+    "PhoneNumber" : "970-945-4228",
+    "Address" : "151000 Two Rivers Plaza Rd Glenwood Springs, CO 81601"
+}
+
+/* 50 */
+{
+    "_id" : ObjectId("60a5cb60deaf0455632dfa25"),
+    "GymName" : "Earth Treks Golden",
+    "City" : "Golden",
+    "PhoneNumber" : "303-222-9564",
+    "Address" : "700 Golden Ridge Rd. Golden, CO 80401"
+}
