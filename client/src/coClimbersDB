@@ -1,0 +1,209 @@
+/* 1 */
+{
+    "_id" : ObjectId("60a5d63fdeaf0455632dfcd5"),
+    "UserName" : "BelayBuddy44",
+    "Password" : "",
+    "ProfilePic" : "",
+    "FirstName" : "Belay",
+    "LastName" : "Buddy",
+    "City" : "Denver, CO",
+    "HomeGym" : "Earth Treks Englewood",
+    "SkillLevel" : "Expert",
+    "FunFact" : "I am better at climbing than Spider Man!",
+    "TimesAvailableMonday" : "",
+    "TimesAvailable" : "",
+    "TimesAvailableWednesday" : "",
+    "TimesAvailableThursday" : "",
+    "TimesAvailableFriday" : "",
+    "TimesAvailableSaturday" : "",
+    "TimesAvailableSunday" : ""
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("60a6b6bfdeaf0455632e00b1"),
+    "UserName" : "mitchflood1",
+    "Password" : "",
+    "ProfilePic" : "",
+    "FirstName" : "Mitch",
+    "LastName" : "Flood",
+    "City" : "Lone Tree, CO",
+    "HomeGym" : "Earth Treks Englewood",
+    "SkillLevel" : "Expert",
+    "FunFact" : "I like to make music",
+    "TimesAvailableMonday" : "",
+    "TimesAvailable" : "",
+    "TimesAvailableWednesday" : "",
+    "TimesAvailableThursday" : "",
+    "TimesAvailableFriday" : "",
+    "TimesAvailableSaturday" : "",
+    "TimesAvailableSunday" : ""
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("60a6b72bdeaf0455632e00c1"),
+    "UserName" : "BugsBunny01",
+    "Password" : "",
+    "ProfilePic" : "",
+    "FirstName" : "Bugs",
+    "LastName" : "Bunny",
+    "City" : "Golden, CO",
+    "HomeGym" : "Golden Community Center",
+    "SkillLevel" : "Beginner",
+    "FunFact" : "I like to hang out with Elmer Fudd on the weekends.",
+    "TimesAvailableMonday" : "",
+    "TimesAvailable" : "",
+    "TimesAvailableWednesday" : "",
+    "TimesAvailableThursday" : "",
+    "TimesAvailableFriday" : "",
+    "TimesAvailableSaturday" : "",
+    "TimesAvailableSunday" : ""
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("60a6b790deaf0455632e00ce"),
+    "UserName" : "IamLorde",
+    "Password" : "",
+    "ProfilePic" : "",
+    "FirstName" : "Randy",
+    "LastName" : "Marsh",
+    "City" : "South Park, CO",
+    "HomeGym" : "Earth Treks Golden",
+    "SkillLevel" : "Intermediate",
+    "FunFact" : "I live in South Park",
+    "TimesAvailableMonday" : "",
+    "TimesAvailable" : "",
+    "TimesAvailableWednesday" : "",
+    "TimesAvailableThursday" : "",
+    "TimesAvailableFriday" : "",
+    "TimesAvailableSaturday" : "",
+    "TimesAvailableSunday" : ""
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("60a6b85fdeaf0455632e00e2"),
+    "UserName" : "GuyFerarri",
+    "Password" : "",
+    "ProfilePic" : "",
+    "FirstName" : "Guy",
+    "LastName" : "Fieri",
+    "City" : "Denver, CO",
+    "HomeGym" : "Movement Climbing + Fitness RiNo",
+    "SkillLevel" : "Beginner",
+    "FunFact" : "I invented flavor town.",
+    "TimesAvailableMonday" : "",
+    "TimesAvailable" : "",
+    "TimesAvailableWednesday" : "",
+    "TimesAvailableThursday" : "",
+    "TimesAvailableFriday" : "",
+    "TimesAvailableSaturday" : "",
+    "TimesAvailableSunday" : ""
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("60a6b964deaf0455632e0115"),
+    "UserName" : "SpongebobSquarePants11",
+    "Password" : "",
+    "ProfilePic" : "",
+    "FirstName" : "Spongebob",
+    "LastName" : "Squarepants",
+    "City" : "Denver, CO",
+    "HomeGym" : "Movement Climbing + Fitness RiNo",
+    "SkillLevel" : "Advanced",
+    "FunFact" : "I love to go jellyfishing!",
+    "TimesAvailableMonday" : "",
+    "TimesAvailable" : "",
+    "TimesAvailableWednesday" : "",
+    "TimesAvailableThursday" : "",
+    "TimesAvailableFriday" : "",
+    "TimesAvailableSaturday" : "",
+    "TimesAvailableSunday" : ""
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("60a6b9d6deaf0455632e0121"),
+    "UserName" : "johnnyBravoIsCool",
+    "Password" : "",
+    "ProfilePic" : "",
+    "FirstName" : "Johnny",
+    "LastName" : "Bravo",
+    "City" : "Boulder, CO",
+    "HomeGym" : "Movement Climbing + Fitness Boulder",
+    "SkillLevel" : "Advanced",
+    "FunFact" : "I am the man.",
+    "TimesAvailableMonday" : "",
+    "TimesAvailable" : "",
+    "TimesAvailableWednesday" : "",
+    "TimesAvailableThursday" : "",
+    "TimesAvailableFriday" : "",
+    "TimesAvailableSaturday" : "",
+    "TimesAvailableSunday" : ""
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("60a6ba66deaf0455632e012d"),
+    "UserName" : "Gonzo",
+    "Password" : "",
+    "ProfilePic" : "",
+    "FirstName" : "Aaron",
+    "LastName" : "Gonzo",
+    "City" : "Denver, CO",
+    "HomeGym" : "Movement Climbing + Fitness Denver",
+    "SkillLevel" : "Expert",
+    "FunFact" : "I like motorcycles",
+    "TimesAvailableMonday" : "",
+    "TimesAvailable" : "",
+    "TimesAvailableWednesday" : "",
+    "TimesAvailableThursday" : "",
+    "TimesAvailableFriday" : "",
+    "TimesAvailableSaturday" : "",
+    "TimesAvailableSunday" : ""
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("60a6baa2deaf0455632e0139"),
+    "UserName" : "WylieUrig01",
+    "Password" : "",
+    "ProfilePic" : "",
+    "FirstName" : "Wylie",
+    "LastName" : "Urig",
+    "City" : "Denver, CO",
+    "HomeGym" : "Movement Climbing + Fitness Denver",
+    "SkillLevel" : "Expert",
+    "FunFact" : "I like to play soccer.",
+    "TimesAvailableMonday" : "",
+    "TimesAvailable" : "",
+    "TimesAvailableWednesday" : "",
+    "TimesAvailableThursday" : "",
+    "TimesAvailableFriday" : "",
+    "TimesAvailableSaturday" : "",
+    "TimesAvailableSunday" : ""
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("60a6bb18deaf0455632e0145"),
+    "UserName" : "DanTheMan1",
+    "Password" : "",
+    "ProfilePic" : "",
+    "FirstName" : "Dan",
+    "LastName" : "TheMan",
+    "City" : "Silverthorne, CO",
+    "HomeGym" : "Summit Climbing Gym",
+    "SkillLevel" : "Advanced",
+    "FunFact" : "I like to ski.",
+    "TimesAvailableMonday" : "",
+    "TimesAvailable" : "",
+    "TimesAvailableWednesday" : "",
+    "TimesAvailableThursday" : "",
+    "TimesAvailableFriday" : "",
+    "TimesAvailableSaturday" : "",
+    "TimesAvailableSunday" : ""
+}
