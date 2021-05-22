@@ -1,28 +1,35 @@
+import './App.css';
+import Home from "./pages/Home"
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Books from "./pages/Books";
-import Detail from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Nav />
+   <>
+         {/* <Header /> */}
+
+      <Router>
         <Switch>
-          <Route exact path={["/", "/books"]}>
-            <Books />
+          {/* <Route path="/login">
+            <UserLogin />
+          </Route> */}
+
+          <Route path="/">
+            <Home />
           </Route>
-          <Route exact path="/books/:id">
-            <Detail />
+
+          {/* <Route path="/mystack">
+            <MyStack />
           </Route>
-          <Route>
-            <NoMatch />
-          </Route>
+
+          <Route path="/contact">
+            <Contact />
+          </Route> */}
         </Switch>
-      </div>
-    </Router>
+      </Router>
+
+      {/* <Footer /> */}
+   </>
   );
 }
 
