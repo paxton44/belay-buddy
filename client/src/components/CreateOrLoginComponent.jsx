@@ -5,28 +5,28 @@ function CreateOrLoginComponent(){
 
 <div class=" min-h-screen flex flex-col">
             <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
-                <div class=" px-6 py-8 rounded shadow-md text-black w-full">
+                <div class=" px-6 py-8 rounded text-black w-full">
                     <h1 class="mb-8 text-3xl text-white text-center">Sign up</h1>
                     <input 
                         type="text"
-                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        class="border border-grey-light bg-gradient-to-r from-gray-700  block w-full p-3 rounded mb-4"
                         name="fullname"
                         placeholder="Full Name" />
 
                     <input 
                         type="text"
-                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        class="border border-grey-light bg-gradient-to-r from-gray-700 block w-full p-3 rounded mb-4"
                         name="email"
                         placeholder="Email" />
 
                     <input 
                         type="password"
-                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        class="bg-gradient-to-r from-gray-700 block border border-grey-light w-full p-3 rounded mb-4"
                         name="password"
                         placeholder="Password" />
                     <input 
                         type="password"
-                        class="block border border-grey-light w-full p-3 rounded mb-4"
+                        class="bg-gradient-to-r from-gray-700 block border border-grey-light w-full p-3 rounded mb-4"
                         name="confirm_password"
                         placeholder="Confirm Password" />
 
