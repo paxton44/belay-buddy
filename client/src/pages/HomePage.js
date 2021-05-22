@@ -1,5 +1,5 @@
 import CreateOrLoginComponent from "../components/CreateOrLoginComponent"
-function Home(){
+function HomePage(){
     return(
         <>
         <CreateOrLoginComponent />
@@ -7,4 +7,4 @@ function Home(){
     )
 }
 
-export default Home;
+export default HomePage;

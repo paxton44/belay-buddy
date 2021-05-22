@@ -1,7 +1,8 @@
 import './App.css';
-import Home from "./pages/Home"
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   return (
@@ -9,13 +10,14 @@ function App() {
          {/* <Header /> */}
 
       <Router>
+
         <Switch>
-          {/* <Route path="/login">
-            <UserLogin />
-          </Route> */}
+          <Route path="/login">
+            <LoginPage />
+          </Route>
 
           <Route path="/">
-            <Home />
+            <HomePage />
           </Route>
 
           {/* <Route path="/mystack">
