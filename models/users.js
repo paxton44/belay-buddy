@@ -1,61 +1,46 @@
-const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
-const sequelize = require('../config/connection');
+var mongoose = require('mongoose');
+var bcrypt = require('bcryptjs');
 
-class User extends Model {
-  checkPassword(loginPw) {
-    return bcrypt.compareSync(loginPw, this.password);
+// User Schema
+var UserSchema = mongoose.Schema({
+  username: {
+    type: String,
+    index:true
+  },
+  password: {
+    type: String
+  },
+  email: {
+    type: String
+  },
+  name: {
+    type: String
   }
+});
+
+var User = module.exports = mongoose.model('User', UserSchema);
+
+module.exports.createUser = function(newUser, callback){
+  bcrypt.genSalt(10, function(err, salt) {
+    bcrypt.hash(newUser.password, salt, function(err, hash) {
+      newUser.password = hash;
+      newUser.save(callback);
+    });
+  });
 }
 
-User.init(
-  {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true,
-      },
-    },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [8],
-      },
-    },
-  },
-  {
-    hooks: {
-      beforeCreate: async (newUserData) => {
-        newUserData.password = await bcrypt.hash(newUserData.password, 8);
-        return newUserData;
-      },
-      beforeUpdate: async (updatedUserData) => {
-        updatedUserData.password = await bcrypt.hash(
-          updatedUserData.password,
-          8
-        );
-        return updatedUserData;
-      },
-    },
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'user',
-  }
-);
+module.exports.getUserByUsername = function(username, callback){
+  var query = {username: username};
+  User.findOne(query, callback);
+}
 
-module.exports = User;
+module.exports.getUserById = function(id, callback){
+  User.findById(id, callback);
+}
+
+module.exports.comparePassword = function(candidatePassword, hash, callback){
+  bcrypt.compare(candidatePassword, hash, function(err, isMatch) {
+    if(err) throw err;
+    callback(null, isMatch);
+  });
+}
