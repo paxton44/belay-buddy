@@ -27,7 +27,7 @@ const loginFormHandler = async () => {
 //login function
 let loginBtn = document.getElementById('login-form');
 
-function handlerForm(event) {``
+function handlerForm(event) {
   event.preventDefault();
   
   console.log('test');
