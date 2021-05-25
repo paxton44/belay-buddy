@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
+import ProfileFormPage from "./pages/ProfileFormPage"
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
 
           <Route path="/">
             <HomePage />
+          </Route>
+
+          <Route path="/createprofile">
+            <ProfileFormPage />
           </Route>
 
           {/* <Route path="/mystack">
