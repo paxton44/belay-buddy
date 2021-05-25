@@ -1,67 +1,75 @@
 const router = require('express').Router();
 const { User } = require('../../models');
-
-// sign up
-router.post('/', async (req, res) => {
-  try {
-    // data will be retreived here for new user info
-    const userData = await User.create(req.body);
-    console.log('data', userData);
-
-    req.session.save(() => {
-      req.session.user_id = userData.id;
-      req.session.logged_in = true;
-
-      res.status(200).json(userData);
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(400).json(err);
+const passport = require("passport");
+var LocalStrategy = require('passport-local').Strategy;
+passport.use(new LocalStrategy(
+  function(username, password, done) {
+    User.getUserByUsername(username, function(err, user){
+      if(err) throw err;
+      if(!user){
+        return done(null, false, {message: 'Unknown User'});
+      }
+      User.comparePassword(password, user.password, function(err, isMatch){
+        if(err) throw err;
+     	if(isMatch){
+     	  return done(null, user);
+     	} else {
+     	  return done(null, false, {message: 'Invalid password'});
+     	}
+     });
+   });
   }
+));
+passport.serializeUser(function(user, done) {
+  done(null, user.id);
 });
 
-router.post('/login', async (req, res) => {
-  try {
-    const userData = await User.findOne({ where: { email: req.body.email } });
-    console.log('user', userData);
-    if (!userData) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
-      return;
-    }
+passport.deserializeUser(function(id, done) {
+  User.getUserById(id, function(err, user) {
+    done(err, user);
+  });
+});
 
-    const validPassword = await userData.checkPassword(req.body.password);
-
-    if (!validPassword) {
-      res
-        .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
-      return;
-    }
-
-    req.session.save(() => {
-      req.session.user_id = userData.id;
-      req.session.logged_in = true;
-
-      res.json({ user: userData, message: 'You are now logged in!' });
+// Register User
+router.post('/register', function(req, res){
+  var password = req.body.password;
+ 
+ 
+    var newUser = new User({
+      name: req.body.name,
+      email: req.body.email,
+      username: req.body.username,
+      password: req.body.password
     });
-  } catch (err) {
-    res.status(400).json(err);
+
+    User.createUser(newUser, function(err, user){
+      if(err) throw err;
+      res.send(user).end()
+    });
+  
+});
+// Endpoint to login
+router.post('/login',
+  passport.authenticate('local'),
+  function(req, res) {
+    res.send(req.user);
   }
+);
+
+// Endpoint to get current user
+router.get('/user', function(req, res){
+  res.send(req.user);
+})
+
+
+// Endpoint to logout
+router.get('/logout', function(req, res){
+  req.logout();
+  res.send(null)
 });
 
 
 
-router.post('/logout', (req, res) => {
-  if (req.session.logged_in) {
-    req.session.destroy(() => {
-      res.status(204).end();
-    });
-  } else {
-    res.status(404).end();
-  }
-});
 
 
 

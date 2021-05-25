@@ -1,3 +1,5 @@
 module.exports = {
-  Book: require("./book")
+  ClimbingGym: require("./climbinggyms"), 
+  User: require("./users")
 };
+
