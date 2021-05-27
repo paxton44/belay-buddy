@@ -11,7 +11,7 @@ function CreateOrLoginComponent() {
                             type="text"
                             className="border border-grey-light bg-gradient-to-r from-gray-700  block w-full p-3 rounded mb-4"
                             name="fullname"
-                            placeholder="Full Name" />
+                           placeholder="Full Name" />
 
                         <input
                             type="text"
