@@ -1,4 +1,5 @@
-import CreateOrLoginComponent from "../components/CreateOrLoginComponent"
+import CreateOrLoginComponent from "../../components/CreateOrLoginComponent"
+import "./home.css"
 
 // const mystyles = { 
 //     htmlbg: {
@@ -13,9 +14,9 @@ function HomePage(){
 
 
     return(
-        <>
+        <div className="homepage">
         <CreateOrLoginComponent />
-        </>
+        </div>
     )
 }
 

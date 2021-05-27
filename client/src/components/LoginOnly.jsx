@@ -6,6 +6,8 @@ function LoginOnly(){
 
     return(
       <> 
+
+      <div className=" min-h-screen flex flex-col">
 <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2 my-10">
     <div className="mb-4">
       <label className="block text-grey-darker text-sm font-bold mb-2" for="username">
@@ -27,6 +29,7 @@ function LoginOnly(){
       <a className=" rounded bg-gradient-to-r from-gray-700 inline-block align-baseline font-bold text-sm text-blue hover:text-blue-darker  text-center" href="#" >
         Forgot Password?
       </a>
+    </div>
     </div>
     </div>
 
