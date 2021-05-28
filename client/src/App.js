@@ -6,23 +6,11 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import ProfileFormPage from "./pages/ProfileFormPage/ProfileFormPage";
 import { useState } from "react";
 import UserProfilePage from "./pages/UserProfilePage/UserProfilePage";
+import LandingPage from "./pages/LandingPage/LandingPage"
 
 function App() {
-  const [inputsObj, setInputsObj] = useState({
-    // availability:[]
-  });
-
-  const handleInputs = (e) => {
-    const clone = inputsObj;
-    clone[e.target.name] = e.target.value;
-    setInputsObj(clone);
-    // console.log(e)
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(inputsObj);
-    alert("form submitted");
-  };
+  
+  
   return (
     <>
       <Router>
@@ -36,19 +24,15 @@ function App() {
           </Route>
 
           <Route path="/createprofile">
-            <ProfileFormPage
-              handleSubmit={handleSubmit}
-              handleInputs={handleInputs}
-              inputsObj={inputsObj}
-            />
+            <ProfileFormPage />
           </Route>
 
           <Route path="/userprofile">
-            <UserProfilePage
-              handleSubmit={handleSubmit}
-              handleInputs={handleInputs}
-              inputsObj={inputsObj}
-            />
+            <UserProfilePage />
+          </Route>
+
+          <Route path="/landingpage">
+            <LandingPage />
           </Route>
         </Switch>
       </Router>

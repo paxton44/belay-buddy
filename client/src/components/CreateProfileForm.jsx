@@ -1,10 +1,27 @@
-function CreateProfileForm(props) {
+
+import { useState } from "react";
+function CreateProfileForm() {
+    const [inputsObj, setInputsObj] = useState({
+       
+      });
+    
+      const handleInputs = (e) => {
+        const clone = inputsObj;
+        clone[e.target.name] = e.target.value;
+        setInputsObj(clone);
+        // console.log(e)
+      };
+    
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(inputsObj);
+        alert("form submitted");
+      };
     const dayOfWeek = (day) => {
         return (
             <>
-                <p>What is your availability on {day}</p>
-                {/* <input type="text" required name={`${day}trainers-name`} onChange={props.handleInputs} /> */}
-                <select name={`${day}Time`} onChange={props.handleInputs}>
+                <p className="text-white">What is your availability on {day}</p>
+                <select name={`${day}Time`} onChange={handleInputs}>
                     <option>6am</option>
                     <option>7am</option>
                     <option>8am</option>
@@ -27,8 +44,9 @@ function CreateProfileForm(props) {
     }
     return (
         <>
+        <div className="min-h-screen flex flex-col">
             <div className=" container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2 my-10">
-            <form onSubmit={props.handleSubmit} onChange={props.handleInputs}>
+            <form onSubmit={handleSubmit} onChange={handleInputs}>
                     {/* input fields and labels for the data we recieve for our form. we want to store all of this to an array to be used later(useState) */}
                     <label className="text-white" for="username">Enter User Name:</label><br />
                     <input type="text" id="username" name="username" /><br />
@@ -42,19 +60,18 @@ function CreateProfileForm(props) {
                     <label className="text-white" for="homegym">Enter Home Gym:</label><br />
                     <input type="text" id="homegym" name="homegym" /><br />
 
-                    <input type="checkbox" id="skillbegin" name="skillbegin" value="Beginner" />
-                    <label className="text-white" for="skillbegin"> I am a beginner! Help me learn please.</label><br />
+                    <input type="checkbox" id="skillLevel" name="skillLevel" value="Beginner" />
+                    <label className="text-white" for="skillLevel"> I am a beginner! Help me learn please.</label><br />
 
-                    <input type="checkbox" id="skillintermediate" name="skillintermediate" value="Intermediate" />
-                    <label className="text-white" for="skillintermediate"> I am at an intermediate skill level</label><br />
+                    <input type="checkbox" id="skillLevelIntermediate" name="skillLevelIntermediate" value="Intermediate" />
+                    <label className="text-white" for="skillLevelIntermediate"> I am at an intermediate skill level</label><br />
                     
-                    <input type="checkbox" id="skilladvanced" name="skilladvanced" value="Advanced" />
-                    <label className="text-white" for="skilladvanced"> I am at an advanced skill level</label><br />
+                    <input type="checkbox" id="skillLevel" name="skillLevel" value="Advanced" />
+                    <label className="text-white" for="skillLevel"> I am at an advanced skill level</label><br />
 
                     <label className="text-white" for="funfact">Enter a fun fact about yourself:</label><br />
                     <input type="text" id="funfact" name="funfact" /><br />
 
-                {/* <form onSubmit={props.handleSubmit}> */}
                         {dayOfWeek('Monday')}
                         {dayOfWeek('Tuesday')}
                         {dayOfWeek('Wednesday')}
@@ -62,13 +79,12 @@ function CreateProfileForm(props) {
                         {dayOfWeek('Friday')}
                         {dayOfWeek('Saturday')}
                         {dayOfWeek('Sunday')}
-
+                        {/* <Link to="landingpage"> */}
                         <button>Click Me </button>
-
-                    </form>
-                    
-            </div>
-            
+                        {/* </Link> */}
+                    </form>                    
+            </div>     
+            </div>       
         </>
     )
 }
