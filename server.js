@@ -21,7 +21,9 @@ app.use(session({
   saveUninitialized: true,
   resave: true
 }));
-
+app.get("/test", function(req, res){
+  res.send({message:"works"})
+})
 // Passport init
 app.use(passport.initialize());
 app.use(passport.session());
