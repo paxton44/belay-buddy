@@ -1,3 +1,28 @@
 .profileform{
-    background: #000;
+    background:#Db9470;  
+}
+.profileform>div>form{
+    background:#9f978e
+}
+
+.profileform>div>form>input{
+    background:#c1cdae
+}
+/* .profileform>div>form>{
+    background:#c1cdae
+} */
+.profileform>div>form>label{
+    color:#0876b1
+}
+
+.dropdown{
+    background:#c1cdae
+}
+.daytext{
+    color:#0876b1
+}
+
+.submitForm{
+    background-color:#c1cdae ;
+    
 }
