@@ -43,28 +43,49 @@ function CreateOrLoginComponent() {
             <div className=" min-h-screen flex flex-col">
                 <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center  px-2">
                     <div className=" px-6 py-8 rounded text-black w-full">
+
+                        
+                        {/* Animated Sign Up Header */}
+                        <div class="box">
+                        <div class="inner">
+                        <span>Sign Up</span>
+                        </div>
+                        <div class="inner">
+                        <span>Sign Up</span>
+                        </div>
+                        </div>
+
+
+
+
+                        <form onSubmit={handleSubmit}>
+                        <input style={{backgroundColor: '#ECAB3E'}} onChange={handleInputs}
+                            type="text"
+                            className=" placeholder-red-700 opacity-50 text-black font-bold block w-full p-3 rounded mb-4"
+
                         <h1 className="mb-8 text-3xl text-white text-center">Sign up</h1>
                         <form  onSubmit={handleSubmit}>
                         <input onChange={handleInputs}
                             type="text"
                             className="border  border-blue-500 border-opacity-100 opacity-20  block w-full p-3 rounded mb-4"
+
                             name="fullname"
                            placeholder="Full Name" />
 
-                        <input onChange={handleInputs}
+                        <input style={{backgroundColor: '#ECAB3E'}} onChange={handleInputs}
                             type="text"
-                            className="border border-grey-light bg-gradient-to-r from-gray-700 block w-full p-3 rounded mb-4"
+                            className=" placeholder-red-700  opacity-50 font-bold block w-full p-3 rounded mb-4"
                             name="email"
                             placeholder="Email" />
 
-                        <input onChange={handleInputs}
+                        <input style={{backgroundColor: '#ECAB3E'}} onChange={handleInputs}
                             type="password"
-                            className="bg-gradient-to-r from-gray-700 block border border-grey-light w-full p-3 rounded mb-4"
+                            className="placeholder-red-700  opacity-50 font-bold block  w-full p-3 rounded mb-4"
                             name="password"
                             placeholder="Password" />
-                        <input onChange={handleInputs}
+                        <input style={{backgroundColor: '#ECAB3E'}} onChange={handleInputs}
                             type="password"
-                            className="bg-gradient-to-r from-gray-700 block border border-grey-light w-full p-3 rounded mb-4"
+                            className="placeholder-red-700  opacity-50 font-bold block  w-full p-3 rounded mb-4"
                             name="confirm_password"
                             placeholder="Confirm Password" />
 
@@ -72,7 +93,7 @@ function CreateOrLoginComponent() {
                         
                             <button
                                 type="submit"
-                                className="w-full text-center py-3 rounded bg-green text-red-700 hover:bg-green-200 focus:outline-none my-1"
+                                className="w-full text-center py-3 rounded bg-green text-red-700 font-bold hover:bg-blue-500 focus:outline-none my-1"
                             >Create Account</button>
                         
                         </form>

@@ -15,7 +15,9 @@ function HomePage(){
 
     return(
         <div className="homepage">
+        <article class="wrapper">
         <CreateOrLoginComponent />
+        </article>
         </div>
     )
 }

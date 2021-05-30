@@ -5,3 +5,99 @@
     -o-background-size: cover;
     background-size: cover;
   }
+
+
+  
+
+  
+   
+
+/* Animated Background */
+   
+   .wrapper {
+     animation: scroll 250s linear infinite;
+     background: url("https://firebasestorage.googleapis.com/v0/b/portfoliopix-7a60a.appspot.com/o/gerson-repreza-_i_0iPnJ5KI-unsplash%20(1).jpg?alt=media&token=86fa276e-79cb-4c1e-822f-6f18bd8cf510");
+     color: #F5F3C4;
+     height: 100vh;
+     min-width: 360px;
+     width: 100%;
+     display: 50%;
+     justify-content: center;
+     align-items: center;
+     perspective: 1000px;
+     perspective-origin: 50% 50%;
+     
+   }
+   
+   @keyframes scroll {
+      100%{
+       background-position:0px -3000px;
+     }
+   }
+   
+   @media (prefers-reduced-motion) {
+     .wrapper {
+       animation: scroll 200s linear infinite;
+     }
+   }
+   
+   @media (min-width: 670px) {
+     .title {
+       font-size: 5rem;
+     }
+   }
+
+
+/* Animated Sign Up Header */
+
+.box {
+	display: flex;
+}
+
+.box .inner {
+	width: 400px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: #EA424D;
+	color: #97161f;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: #ECAB3E;
+	color: #F5F3C4;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 7s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+
+
+/* Input form animation */
