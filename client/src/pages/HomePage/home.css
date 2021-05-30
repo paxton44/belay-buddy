@@ -6,15 +6,18 @@
     background-size: cover;
   }
 
+
+  
+
   
    
 
 /* Animated Background */
    
    .wrapper {
-     animation: scroll 500s linear infinite;
+     animation: scroll 250s linear infinite;
      background: url("https://firebasestorage.googleapis.com/v0/b/portfoliopix-7a60a.appspot.com/o/gerson-repreza-_i_0iPnJ5KI-unsplash%20(1).jpg?alt=media&token=86fa276e-79cb-4c1e-822f-6f18bd8cf510");
-     color: #eee;
+     color: #F5F3C4;
      height: 100vh;
      min-width: 360px;
      width: 100%;
@@ -63,15 +66,15 @@
 }
 
 .box .inner:first-child {
-	background-color: indianred;
-	color: darkred;
+	background-color: #EA424D;
+	color: #97161f;
 	transform-origin: right;
 	transform: perspective(100px) rotateY(-15deg);
 }
 
 .box .inner:last-child {
-	background-color: lightcoral;
-	color: antiquewhite;
+	background-color: #ECAB3E;
+	color: #F5F3C4;
 	transform-origin: left;
 	transform: perspective(100px) rotateY(15deg);
 }
@@ -95,3 +98,6 @@
 		left: -100%;
 	}
 }
+
+
+/* Input form animation */
