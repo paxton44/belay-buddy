@@ -6,13 +6,13 @@
     background-size: cover;
   }
 
-  /* put css here for triagle response card bakgrnd
-   */
+  
+   
 
-
+/* Animated Background */
    
    .wrapper {
-     animation: scroll 70s linear infinite;
+     animation: scroll 500s linear infinite;
      background: url("https://firebasestorage.googleapis.com/v0/b/portfoliopix-7a60a.appspot.com/o/gerson-repreza-_i_0iPnJ5KI-unsplash%20(1).jpg?alt=media&token=86fa276e-79cb-4c1e-822f-6f18bd8cf510");
      color: #eee;
      height: 100vh;
@@ -43,3 +43,55 @@
        font-size: 5rem;
      }
    }
+
+
+/* Animated Sign Up Header */
+
+.box {
+	display: flex;
+}
+
+.box .inner {
+	width: 400px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: indianred;
+	color: darkred;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: lightcoral;
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 7s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
