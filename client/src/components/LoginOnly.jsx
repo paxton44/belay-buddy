@@ -7,16 +7,16 @@ function LoginOnly(){
     return(
       <> 
 
-      <div className=" min-h-screen flex flex-col">
-<div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2 my-10">
+      <div className="min-h-screen flex">
+<div className="container max-w-sm mx-auto flex-1 flex flex-col items-center px-2 my-3">
     <div className="mb-4">
-      <label className="block text-grey-darker text-sm font-bold mb-2" for="username">
+      <label className="text-grey-darker text-sm font-bold mb-2" for="username">
         Username
       </label>
       <input className="border border-grey-light bg-gradient-to-r from-gray-700 border border-grey-light rounded w-full py-2 px-3 text-grey-darker" id="username" type="text" placeholder="Username" />
     </div>
     <div className="mb-6">
-      <label className="block text-grey-darker text-sm font-bold mb-2" for="password">
+      <label className="text-grey-darker text-sm font-bold mb-2" for="password">
         Password
       </label>
       <input className="bg-gradient-to-r from-gray-700 border-grey-light shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker mb-3" id="password" type="password" placeholder="******************" />

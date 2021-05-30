@@ -19,9 +19,10 @@ function CreateProfileForm() {
       };
     const dayOfWeek = (day) => {
         return (
-            <>
-                <p className="text-white">What is your availability on {day}</p>
-                <select name={`${day}Time`} onChange={handleInputs}>
+            <>   
+            
+                <p className="text-lg daytext">What is your availability on {day}</p>
+                <select className="dropdown shadow-md mt-1 block sm:text-sm border-gray-900" name={`${day}Time`} onChange={handleInputs}>
                     <option>6am</option>
                     <option>7am</option>
                     <option>8am</option>
@@ -44,33 +45,32 @@ function CreateProfileForm() {
     }
     return (
         <>
-        <div className="min-h-screen flex flex-col">
-            <div className=" container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2 my-10">
-            <form onSubmit={handleSubmit} onChange={handleInputs}>
+        <div className="flex">
+            <form onSubmit={handleSubmit} onChange={handleInputs} className="my-20 p-10 max-w-xl mx-auto shadow-md sm:border-0 md:border md:border-gray-900 text-gray-900 ">
                     {/* input fields and labels for the data we recieve for our form. we want to store all of this to an array to be used later(useState) */}
-                    <label className="text-white" for="username">Enter User Name:</label><br />
-                    <input type="text" id="username" name="username" /><br />
+                    <label className="text-lg flex justify-between items-end" for="username">Enter User Name:</label><br />
+                    <input className="shadow-md mt-1 block w-full sm:text-sm" type="text" id="username" name="username" /><br />
 
-                    <label className="text-white" for="firstname">First name:</label><br />
-                    <input type="text" id="firstname" name="firstname" /><br />
+                    <label className="text-lg flex justify-between items-end" for="firstname">First name:</label><br />
+                    <input className="shadow-md mt-1 block w-full sm:text-sm" type="text" id="firstname" name="firstname" /><br />
 
-                    <label className="text-white" for="city">Enter City:</label><br />
-                    <input type="text" id="city" name="city" /><br />
+                    <label className="text-lg flex justify-between items-end" for="city">Enter City:</label><br />
+                    <input className="shadow-md mt-1 block w-full sm:text-sm bg-white" type="text" id="city" name="city" /><br />
 
-                    <label className="text-white" for="homegym">Enter Home Gym:</label><br />
-                    <input type="text" id="homegym" name="homegym" /><br />
+                    <label className="text-lg flex justify-between items-end" for="homegym">Enter Home Gym:</label><br />
+                    <input className="shadow-md mt-1 block w-full sm:text-sm" type="text" id="homegym" name="homegym" /><br />
 
-                    <input type="checkbox" id="skillLevel" name="skillLevel" value="Beginner" />
-                    <label className="text-white" for="skillLevel"> I am a beginner! Help me learn please.</label><br />
+                    <input className="shadow-md mt-1" type="checkbox" id="skillLevel" name="skillLevel" value="Beginner" />
+                    <label className="" for="skillLevel"> I am a beginner! Help me learn please.</label><br />
 
                     <input type="checkbox" id="skillLevelIntermediate" name="skillLevelIntermediate" value="Intermediate" />
-                    <label className="text-white" for="skillLevelIntermediate"> I am at an intermediate skill level</label><br />
+                    <label className="" for="skillLevelIntermediate"> I am at an intermediate skill level</label><br />
                     
                     <input type="checkbox" id="skillLevel" name="skillLevel" value="Advanced" />
-                    <label className="text-white" for="skillLevel"> I am at an advanced skill level</label><br />
+                    <label className="" for="skillLevel"> I am at an advanced skill level</label><br />
 
-                    <label className="text-white" for="funfact">Enter a fun fact about yourself:</label><br />
-                    <input type="text" id="funfact" name="funfact" /><br />
+                    <label className="text-lg flex   mt-5" for="funfact">Enter a fun fact about yourself:</label><br />
+                    <input className="shadow-md block w-full sm:text-sm" type="text" id="funfact" name="funfact" /><br />
 
                         {dayOfWeek('Monday')}
                         {dayOfWeek('Tuesday')}
@@ -80,11 +80,15 @@ function CreateProfileForm() {
                         {dayOfWeek('Saturday')}
                         {dayOfWeek('Sunday')}
                         {/* <Link to="landingpage"> */}
-                        <button>Click Me </button>
+                        {/* center this button */}
+                        <div className="">
+                        <button className="submitForm border rounded hover:bg-gray-500 hover:text-white mt-2">Submit Form </button>
+                        </div>
                         {/* </Link> */}
                     </form>                    
-            </div>     
-            </div>       
+            
+            </div> 
+            
         </>
     )
 }

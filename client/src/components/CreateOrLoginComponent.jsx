@@ -41,13 +41,13 @@ function CreateOrLoginComponent() {
         <>
 
             <div className=" min-h-screen flex flex-col">
-                <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+                <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center  px-2">
                     <div className=" px-6 py-8 rounded text-black w-full">
                         <h1 className="mb-8 text-3xl text-white text-center">Sign up</h1>
-                        <form onSubmit={handleSubmit}>
+                        <form  onSubmit={handleSubmit}>
                         <input onChange={handleInputs}
                             type="text"
-                            className="border border-grey-light bg-gradient-to-r from-gray-700  block w-full p-3 rounded mb-4"
+                            className="border  border-blue-500 border-opacity-100 opacity-20  block w-full p-3 rounded mb-4"
                             name="fullname"
                            placeholder="Full Name" />
 
