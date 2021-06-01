@@ -10,3 +10,13 @@ create account
 from submit button
 login button 
 redirect to login page
+
+
+i need to know what to do for my form. i believe i will be making a post after the user finishes filling out the create profile form
+
+
+then on the next page when i go to generate their completed user profile page, i will be making a fetch to get that same data
+
+so i assume i need a route i will be posting the req.body to?
+
+and what the key names should be within the object to match

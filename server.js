@@ -21,9 +21,19 @@ app.use(session({
   saveUninitialized: true,
   resave: true
 }));
+
+
 app.get("/test", function(req, res){
   res.send({message:"works"})
 })
+
+// Send every request to the React app
+// Define any API routes before this runs
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
+
+
 // Passport init
 app.use(passport.initialize());
 app.use(passport.session());

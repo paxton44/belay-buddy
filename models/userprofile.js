@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+// username, first name, city, home gym, 
+
 const userProfile = new Schema({
   
     username: {
@@ -21,17 +23,21 @@ const userProfile = new Schema({
         type: String,
         index:true
       },
-      Skill: {
+      skillLevel: {
         type: String,
         index:true
       },
-      Comfortability: {
-          type: Boolean,
+      funfact: {
+          type: String,
           required: true
-      }
-  
+      },
+      time: {
+        type: String,
+        required: true
+    }
+    
 });
 
 const userProfile = mongoose.model("userProfile", userProfileSchema);
 
-module.exports = Book;
+module.exports = userProfile; 
