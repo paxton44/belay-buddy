@@ -30,7 +30,7 @@ passport.deserializeUser(function(id, done) {
   });
 });
 
-// Register User
+// Register User 
 router.post('/register', function(req, res){
   var password = req.body.password;
  
@@ -56,8 +56,10 @@ router.post('/login',
   }
 );
 
-// Endpoint to get current user
-router.get('/user', function(req, res){
+// Endpoint to get current user 
+//middleware needed
+router.get('/user', passport.authenticate('local'),
+function(req, res){
   res.send(req.user);
 })
 
