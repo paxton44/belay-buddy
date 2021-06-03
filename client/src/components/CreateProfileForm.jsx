@@ -17,7 +17,7 @@ function CreateProfileForm() {
     alert("form submitted");
     // insert values from input boxes (name, city, etc)
     console.log('test')
-    API.saveProfile({ inputsObj });
+    API.saveProfile( inputsObj );
   };
   
   const dayOfWeek = (day) => {
