@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 // username, first name, city, home gym, 
 
-const userProfile = new Schema({
+const ProfileSchema = new Schema({
   
     username: {
         type: String,
@@ -38,6 +38,6 @@ const userProfile = new Schema({
     
 });
 
-const userProfile = mongoose.model("userProfile", userProfileSchema);
+const UserProfile = mongoose.model("UserProfile", ProfileSchema);
 
-module.exports = userProfile; 
+module.exports = UserProfile; 

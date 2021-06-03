@@ -20,3 +20,21 @@ then on the next page when i go to generate their completed user profile page, i
 so i assume i need a route i will be posting the req.body to?
 
 and what the key names should be within the object to match
+
+
+routes
+- route that will connect user to profile page after inital signup 
+- route that will create a profile after user fills out form 
+- profile data will be saved in database 
+
+
+auth
+
+need auth controller
+
+front end with auth 
+- context 
+
+authenticated routes and unauthenticated routes 
+
+- redirect if issue with login 

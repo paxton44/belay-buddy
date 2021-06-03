@@ -1,5 +1,8 @@
 module.exports = {
   ClimbingGym: require("./climbinggyms"), 
-  User: require("./users")
+  User: require("./users"),
+  
+  UserProfile: require("./userprofile")
+
 };
 
