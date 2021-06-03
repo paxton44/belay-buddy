@@ -5,7 +5,7 @@ const db = require("../models");
 
 mongoose.connect(
   
-  process.env.MONGODB_URI,
+  process.env.MONGODB_URI || "mongodb://localhost/climbing", 
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
