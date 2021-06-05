@@ -19,7 +19,7 @@ function CreateOrLoginComponent() {
     e.preventDefault();
     console.log(inputsObj);
     //post form data to /register route
-    fetch("/api/register", {
+    fetch("/api/users/register", {
       method: "POST",
       body: JSON.stringify(inputsObj),
       headers: {
@@ -30,7 +30,7 @@ function CreateOrLoginComponent() {
       .then((data) => data.json())
       .then((data) => {
         console.log(data);
-
+    // window.location.href = "/createprofile"
         // window.location.href = "/" this is my redirect route for after auth, i set it where the slash is
       });
   };
@@ -40,29 +40,25 @@ function CreateOrLoginComponent() {
       <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center  px-2">
         <div className=" px-6 py-8 rounded text-black w-full">
           {/* Animated Sign Up Header */}
-          <div class="box">
-            <div class="inner">
+          <div className="box">
+            <div className="inner">
               <span>Sign Up</span>
             </div>
-            <div class="inner">
+            <div className="inner">
               <span>Sign Up</span>
             </div>
           </div>
 
           <form onSubmit={handleSubmit}>
-            <input
-              style={{ backgroundColor: "#ECAB3E" }}
-              onChange={handleInputs}
-              type="text"
-              className=" placeholder-red-700 opacity-50 text-black font-bold block w-full p-3 rounded mb-4"
-            />
+          
 
             <h1 className="mb-8 text-3xl text-white text-center">Sign up</h1>
-            <form onSubmit={handleSubmit}>
+            {/* <form onSubmit={handleSubmit}> */}
               <input
+              style={{ backgroundColor: "#ECAB3E" }}
                 onChange={handleInputs}
                 type="text"
-                className="border  border-blue-500 border-opacity-100 opacity-20  block w-full p-3 rounded mb-4"
+                className="placeholder-red-700  opacity-50 font-bold block w-full p-3 rounded mb-4"
                 name="fullname"
                 placeholder="Full Name"
               />
@@ -99,7 +95,7 @@ function CreateOrLoginComponent() {
               >
                 Create Account
               </button>
-            </form>
+            {/* </form> */}
             <div className="App">
               <button onClick={testapi}>Test API</button>
             </div>

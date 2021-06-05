@@ -14,11 +14,11 @@ function HomePage(){
 
 
     return(
-        <div className="homepage">
-        <article class="wrapper">
+        
+        <article className="wrapper">
         <CreateOrLoginComponent />
         </article>
-        </div>
+        
     )
 }
 
