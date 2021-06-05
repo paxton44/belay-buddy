@@ -19,7 +19,7 @@ function CreateOrLoginComponent() {
     e.preventDefault();
     console.log(inputsObj);
     //post form data to /register route
-    fetch("/api/register", {
+    fetch("/api/users/register", {
       method: "POST",
       body: JSON.stringify(inputsObj),
       headers: {

@@ -124,6 +124,7 @@ function LandingPageComponent() {
         <>
             {/* 40% page space userprofilecomponent */}
             <div className="h-screen mt-4 ml-2 grid grid-cols-5 gap-4 ">
+                
                 <div className="  col-span-2">
                     <UserProfileComponent />
                 </div>
