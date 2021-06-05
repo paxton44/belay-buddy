@@ -70,7 +70,6 @@ function CreateProfileForm() {
           onChange={handleInputs}
           className="my-20 p-10 max-w-xl mx-auto shadow-md sm:border-0 md:border md:border-gray-900 text-gray-900 "
         >
-          {/* input fields and labels for the data we recieve for our form. we want to store all of this to an array to be used later(useState) */}
           <label
             className="text-lg flex justify-between items-end"
             for="username"
@@ -184,14 +183,13 @@ function CreateProfileForm() {
           {dayOfWeek("Friday")}
           {dayOfWeek("Saturday")}
           {dayOfWeek("Sunday")}
-          {/* <Link to="landingpage"> */}
-          {/* center this button */}
+
           <div className="">
             <button className="submitForm border rounded hover:bg-gray-500 hover:text-white mt-2">
               Submit Form{" "}
             </button>
           </div>
-          {/* </Link> */}
+          
         </form>
       </div>
     </>
