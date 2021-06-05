@@ -5,55 +5,167 @@ let gymUsers = [
         userName: "AllFather",
         skillLevel: "main boss",
         homeGym: "valhalla",
-        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/reactDirScaled2.jpg?alt=media&token=e704d7ed-9068-481e-b409-e2fe44b3874f",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/odincropped.jpeg?alt=media&token=df0926bf-4059-43b7-85c7-f62c5cc25788",
         TimesAvailable:
             "all day",
-            city:"Denver"
+        city: "Denver"
     },
     {
         userName: "Loki",
         skillLevel: "Mischievous",
         homeGym: "Jotunheim",
-        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/wdb3fb.jpg?alt=media&token=aeadc92a-972f-4203-9068-a24ef70602c2",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/lokismaller.jpeg?alt=media&token=657702a3-c154-4388-b4b1-71c26b9e171c",
         //!   times available needs to be its own object? or its own div with 7 key value pairs?
         TimesAvailable:
             "monday",
-            city:"oakland"
+        city: "oakland"
     },
     {
         userName: "Odinson",
         skillLevel: "Thunderous",
         homeGym: "Azgard",
-        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/better%20copy.jpg?alt=media&token=0d96e8e2-a5d1-4446-a325-52624fef95d1",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/thorsmilingsquare.jpeg?alt=media&token=25696a9e-72a6-4b32-8e5c-c8bb9bd7a140",
         TimesAvailable:
             "wednesday",
-            city:"NewYork"
+        city: "NewYork"
     },
     {
         userName: "Heimdall",
+        skillLevel: "All Seeing",
         gitHub: "https://github.com/iigonzoii/TeamProfileGenerator",
         homeGym:
             "gates of the bifrost",
-        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/tpg2.jpg?alt=media&token=6caa525d-6722-4986-a309-1ce65924f375",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/heimdall.jpeg?alt=media&token=c21c8726-2c5c-4b9f-823a-6705ffd17048",
         TimesAvailable:
             "when the realm is at peace",
-            city:"Chicago"
+        city: "Chicago"
+    },
+    {
+        userName: "AllFather",
+        skillLevel: "main boss",
+        homeGym: "valhalla",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/odincropped.jpeg?alt=media&token=df0926bf-4059-43b7-85c7-f62c5cc25788",
+        TimesAvailable:
+            "all day",
+        city: "Denver"
+    },
+    {
+        userName: "Loki",
+        skillLevel: "Mischievous",
+        homeGym: "Jotunheim",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/lokismaller.jpeg?alt=media&token=657702a3-c154-4388-b4b1-71c26b9e171c",
+        //!   times available needs to be its own object? or its own div with 7 key value pairs?
+        TimesAvailable:
+            "monday",
+        city: "oakland"
+    },
+    {
+        userName: "Odinson",
+        skillLevel: "Thunderous",
+        homeGym: "Azgard",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/thorsmilingsquare.jpeg?alt=media&token=25696a9e-72a6-4b32-8e5c-c8bb9bd7a140",
+        TimesAvailable:
+            "wednesday",
+        city: "NewYork"
+    },
+    {
+        userName: "Heimdall",
+        skillLevel: "All Seeing",
+        gitHub: "https://github.com/iigonzoii/TeamProfileGenerator",
+        homeGym:
+            "gates of the bifrost",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/heimdall.jpeg?alt=media&token=c21c8726-2c5c-4b9f-823a-6705ffd17048",
+        TimesAvailable:
+            "when the realm is at peace",
+        city: "Chicago"
+    },
+    {
+        userName: "AllFather",
+        skillLevel: "main boss",
+        homeGym: "valhalla",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/odincropped.jpeg?alt=media&token=df0926bf-4059-43b7-85c7-f62c5cc25788",
+        TimesAvailable:
+            "all day",
+        city: "Denver"
+    },
+    {
+        userName: "Loki",
+        skillLevel: "Mischievous",
+        homeGym: "Jotunheim",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/lokismaller.jpeg?alt=media&token=657702a3-c154-4388-b4b1-71c26b9e171c",
+        //!   times available needs to be its own object? or its own div with 7 key value pairs?
+        TimesAvailable:
+            "monday",
+        city: "oakland"
+    },
+    {
+        userName: "Odinson",
+        skillLevel: "Thunderous",
+        homeGym: "Azgard",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/thorsmilingsquare.jpeg?alt=media&token=25696a9e-72a6-4b32-8e5c-c8bb9bd7a140",
+        TimesAvailable:
+            "wednesday",
+        city: "NewYork"
+    },
+    {
+        userName: "Heimdall",
+        skillLevel: "All Seeing",
+        gitHub: "https://github.com/iigonzoii/TeamProfileGenerator",
+        homeGym:
+            "gates of the bifrost",
+        img: "https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/heimdall.jpeg?alt=media&token=c21c8726-2c5c-4b9f-823a-6705ffd17048",
+        TimesAvailable:
+            "when the realm is at peace",
+        city: "Chicago"
     },
 ];
 function LandingPageComponent() {
     return (
         <>
             {/* 40% page space userprofilecomponent */}
-            <div className="ml-2 grid grid-cols-5 gap-4 ">
-                <div className="col-span-2">
+            <div className="h-screen mt-4 ml-2 grid grid-cols-5 gap-4 ">
+                <div className="  col-span-2">
                     <UserProfileComponent />
                 </div>
-{/* grid with four columns inside each row */}
-                {/* 60% page space mapped out rows from db */}
-                <div className="h-20 mr-2 col-span-3 border-2 overflow-scroll">
-                    content2 housing our mapped out rows at 60 % screen fill.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, commodi earum harum dolorem, possimus debitis nulla ut dolorum incidunt atque dolores! Officiis molestiae optio asperiores? Voluptatibus, modi. Pariatur, debitis suscipit.
-                    
+                <div className=" mr-2 col-span-3 border-2 overflow-scroll">
+                    <div className="bg-red-400 rounded border-solid  grid grid-cols-4 gap-4">
+                        <div>
+                            <h1 className="font-bold text-lg">Climbers </h1>
+                        </div>
+                        <div>
+                            <h1 className="font-bold text-lg">Skill Level </h1>
+                        </div>
+                        <div>
+                            <h1 className="font-bold text-lg">Home Gym </h1>
+                        </div>
+                        <div>
+                            <h1 className="font-bold text-lg">Times Available </h1>
+                        </div>
+                    </div>
+                    {gymUsers.map((each, index) => {
+                        return (
+                            <div key={index} className="bg-red-400 rounded border-b-2 border-black">
+                                <div className="grid grid-cols-4 gap-4">
+                                    <div >
+                                    
+                                        <img className="rounded-full " src={each.img}
+                                        alt="user"/>                                      
+                                        <p className="pl-1">{each.userName}</p>
+                                    </div>
+                                    <div>
+                                        <p className="pl-1">{each.skillLevel}</p>
+                                    </div>
+                                    <div>
+                                        <p className="pl-1">{each.homeGym}</p>
+                                    </div>
+                                    <div>
+                                        <p className="pl-1">{each.TimesAvailable}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })}
+
                 </div>
             </div>
         </>

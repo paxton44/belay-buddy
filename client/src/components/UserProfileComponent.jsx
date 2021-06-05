@@ -3,7 +3,7 @@ function UserProfileComponent() {
       
     return (
         <>
-            <div className="card">
+            <div className="card h-screen">
                 <div className="card-top">
                     <img src={"https://place-puppy.com/100x100"}
                         alt={""} className="rounded-full" />
