@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function UserProfileComponent() {
       
     return (
-        <>
+        <div>
             <div className="card h-screen">
                 <div className="card-top">
                     <img src={"https://place-puppy.com/100x100"}
@@ -35,7 +35,7 @@ fun fact: Im not actually "aight" :-P
 <p>Sunday:1</p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
