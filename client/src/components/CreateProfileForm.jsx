@@ -16,8 +16,21 @@ function CreateProfileForm() {
     console.log(inputsObj);
     alert("form submitted");
     // insert values from input boxes (name, City, etc)
-    console.log('test')
-    API.saveProfile( inputsObj );
+    fetch("/api/userprofile", {
+      method: "POST",
+      body: JSON.stringify(inputsObj),
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((data) => data.json())
+      .then((data) => {
+        console.log(data);
+        // after user submits form, redirect to profile page
+    window.location.href = "/userprofile"
+        // window.location.href = "/" this is my redirect route for after auth, i set it where the slash is
+      });
   };
   
   const dayOfWeek = (day) => {
