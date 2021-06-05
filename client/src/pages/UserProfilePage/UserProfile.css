@@ -2,12 +2,13 @@
     .card{
         background-color: rgb(238, 234, 234);
         border-radius: 4px;
-        overflow: hidden
+        overflow: hidden;
+        color: black;
     }
     .card-top{
         margin:0px;
-        color: whitesmoke;
-        background-color: blue;
+        color: black;
+        background-color:red ;
         padding: 12px;
         text-align: center;
 }
