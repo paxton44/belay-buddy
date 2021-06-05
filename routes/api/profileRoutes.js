@@ -3,7 +3,9 @@ const profileController = require("../../controllers/profileController");
 
 router
   .route("/")
-  .post(profileController.create);
+  .get(profileController.findAll)
+  .post(profileController.create)
+ 
 
 router
   .route("/:id")

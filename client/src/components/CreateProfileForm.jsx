@@ -35,7 +35,7 @@ function CreateProfileForm() {
   
   const dayOfWeek = (day) => {
     return (
-      <>
+      <div>
         <p className="text-lg daytext">What is your availability on {day}</p>
         <select
           className="dropdown shadow-md mt-1 block sm:text-sm border-gray-900"
@@ -59,7 +59,7 @@ function CreateProfileForm() {
           <option>8pm</option>
           <option>9pm</option>
         </select>
-      </>
+      </div>
     );
   };
   return (
