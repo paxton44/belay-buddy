@@ -15,7 +15,7 @@ function CreateProfileForm() {
     e.preventDefault();
     console.log(inputsObj);
     alert("form submitted");
-    // insert values from input boxes (name, city, etc)
+    // insert values from input boxes (name, City, etc)
     console.log('test')
     API.saveProfile( inputsObj );
   };
@@ -88,21 +88,21 @@ function CreateProfileForm() {
           />
           <br />
 
-          <label className="text-lg flex justify-between items-end" for="city">
+          <label className="text-lg flex justify-between items-end" for="City">
             Enter City:
           </label>
           <br />
           <input
             className="shadow-md mt-1 block w-full sm:text-sm bg-white"
             type="text"
-            id="city"
-            name="city"
+            id="City"
+            name="City"
           />
           <br />
 
           <label
             className="text-lg flex justify-between items-end"
-            for="homegym"
+            for="HomeGym"
           >
             Enter Home Gym:
           </label>
@@ -110,8 +110,8 @@ function CreateProfileForm() {
           <input
             className="shadow-md mt-1 block w-full sm:text-sm"
             type="text"
-            id="homegym"
-            name="homegym"
+            id="HomeGym"
+            name="HomeGym"
           />
           <br />
 
@@ -130,11 +130,11 @@ function CreateProfileForm() {
 
           <input
             type="checkbox"
-            id="skillLevelIntermediate"
-            name="skillLevelIntermediate"
+            id="skillLevel"
+            name="skillLevel"
             value="Intermediate"
           />
-          <label className="" for="skillLevelIntermediate">
+          <label className="" for="skillLevel">
             {" "}
             I am at an intermediate skill level
           </label>
