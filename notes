@@ -38,3 +38,11 @@ front end with auth
 authenticated routes and unauthenticated routes 
 
 - redirect if issue with login 
+
+create profile - post route to database 
+- redirect to landing page 
+
+login - get profile info by id 
+
+
+
