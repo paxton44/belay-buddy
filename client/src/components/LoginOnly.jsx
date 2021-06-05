@@ -5,7 +5,7 @@ function LoginOnly(){
 
 
     return(
-      <> 
+      <div> 
 
       <div className="min-h-screen flex">
 <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center px-2 my-3">
@@ -34,7 +34,7 @@ function LoginOnly(){
     </div>
 
 
-        </>
+        </div>
     )
 }
 

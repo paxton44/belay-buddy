@@ -1,3 +1,4 @@
+require("dotenv").config()
 const express = require("express");
 var session = require('express-session');
 var passport = require('passport');
@@ -7,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const path = require("path");
 // 
-require("dotenv").config()
+
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -28,9 +29,7 @@ app.get("/test", function(req, res){
 
 // Send every request to the React app
 // Define any API routes before this runs
-app.get("*", function(req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+
 
 
 // Passport init
@@ -39,14 +38,19 @@ app.use(passport.session());
 // Add routes, both API and view
 app.use(routes);
 
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../build")));
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  });
+}
+
 // Express Session
 
 
 // Connect to the Mongo DB
  
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/climbing",
-  // "mongodb://localhost/climbing",
-
 {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -55,9 +59,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/climbing",
 }
 );
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
+
 
 // Start the API server
 app.listen(PORT, function() {

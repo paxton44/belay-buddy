@@ -121,7 +121,7 @@ let gymUsers = [
 ];
 function LandingPageComponent() {
     return (
-        <>
+        <div>
             {/* 40% page space userprofilecomponent */}
             <div className="h-screen mt-4 ml-2 grid grid-cols-5 gap-4 ">
                 
@@ -169,7 +169,7 @@ function LandingPageComponent() {
 
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
