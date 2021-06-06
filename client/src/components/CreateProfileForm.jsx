@@ -15,7 +15,7 @@ function CreateProfileForm() {
     e.preventDefault();
     console.log(inputsObj);
     alert("form submitted");
-    // insert values from input boxes (name, City, etc)
+
     fetch("/api/userprofile", {
       method: "POST",
       body: JSON.stringify(inputsObj),
@@ -27,18 +27,19 @@ function CreateProfileForm() {
       .then((data) => data.json())
       .then((data) => {
         console.log(data);
-        // after user submits form, redirect to profile page
-    window.location.href = "/userprofile"
-        // window.location.href = "/" this is my redirect route for after auth, i set it where the slash is
+        window.location.href = "/userprofile"
       });
   };
-  
+
   const dayOfWeek = (day) => {
     return (
       <div>
-        <p className="text-lg daytext">What is your availability on {day}</p>
-        <select
-          className="dropdown shadow-md mt-1 block sm:text-sm border-gray-900"
+        <p
+          className="day"
+        // className="text-lg daytext"
+        >What is your availability on {day}</p>
+        <select className="checkboxcolor bg-transparent hover:bg-gray-500"
+          // className="dropdown shadow-md mt-1 block sm:text-sm border-gray-900"
           name={`${day}Time`}
           onChange={handleInputs}
         >
@@ -64,67 +65,107 @@ function CreateProfileForm() {
   };
   return (
     <>
-      <div className="flex">
+      <div
+        className="maincontainer overflow-scroll "
+      // className="flex"
+      >
         <form
           onSubmit={handleSubmit}
           onChange={handleInputs}
-          className="my-20 p-10 max-w-xl mx-auto shadow-md sm:border-0 md:border md:border-gray-900 text-gray-900 "
+        // className="my-20 p-10 max-w-xl mx-auto shadow-md sm:border-0 md:border md:border-gray-900 text-gray-900 "
         >
           <label
-            className="text-lg flex justify-between items-end"
+            // className="text-lg flex justify-between items-end"
             for="username"
           >
-            Enter User Name:
+            <input required
+              // className="shadow-md mt-1 block w-full sm:text-sm"
+              type="text"
+              id="username"
+              name="username"
+            />
+            <div className="label-text">
+              Enter User Name:
+            </div>
           </label>
           <br />
-          <input
+          {/* <input
             className="shadow-md mt-1 block w-full sm:text-sm"
             type="text"
             id="username"
             name="username"
-          />
+          /> */}
           <br />
 
           <label
-            className="text-lg flex justify-between items-end"
+            // className="text-lg flex justify-between items-end"
             for="firstname"
           >
-            First name:
+            <input required
+              // className="shadow-md mt-1 block w-full sm:text-sm"
+              type="text"
+              id="firstname"
+              name="firstname"
+            />
+            <div className="label-text">
+              First name:
+          </div>
+
           </label>
           <br />
-          <input
+          {/* <input
             className="shadow-md mt-1 block w-full sm:text-sm"
             type="text"
             id="firstname"
             name="firstname"
-          />
+          /> */}
           <br />
 
-          <label className="text-lg flex justify-between items-end" for="City">
-            Enter City:
+          <label
+            // className="text-lg flex justify-between items-end"
+            for="City">
+            <input required
+              // className="shadow-md mt-1 block w-full sm:text-sm bg-white"
+              type="text"
+              id="City"
+              name="City"
+            />
+            <div className="label-text">
+              Enter City:
+          </div>
+
           </label>
           <br />
-          <input
+          {/* <input
             className="shadow-md mt-1 block w-full sm:text-sm bg-white"
             type="text"
             id="City"
             name="City"
-          />
+          /> */}
           <br />
 
           <label
-            className="text-lg flex justify-between items-end"
+            // className="text-lg flex justify-between items-end"
             for="HomeGym"
           >
-            Enter Home Gym:
+            <input required
+              // className="shadow-md mt-1 block w-full sm:text-sm"
+              type="text"
+              id="HomeGym"
+              name="HomeGym"
+            />
+            <div className="label-text">
+              Enter Home Gym:
+          </div>
+
           </label>
           <br />
-          <input
-            className="shadow-md mt-1 block w-full sm:text-sm"
+          {/* <input
+            // className="shadow-md mt-1 block w-full sm:text-sm"
             type="text"
             id="HomeGym"
             name="HomeGym"
-          />
+          /> */}
           <br />
 
           <input
@@ -134,7 +175,7 @@ function CreateProfileForm() {
             name="skillLevel"
             value="Beginner"
           />
-          <label className="" for="skillLevel">
+          <label className="checkboxcolor" for="skillLevel">
             {" "}
             I am a beginner! Help me learn please.
           </label>
@@ -146,7 +187,7 @@ function CreateProfileForm() {
             name="skillLevel"
             value="Intermediate"
           />
-          <label className="" for="skillLevel">
+          <label className="checkboxcolor" for="skillLevel">
             {" "}
             I am at an intermediate skill level
           </label>
@@ -158,22 +199,33 @@ function CreateProfileForm() {
             name="skillLevel"
             value="Advanced"
           />
-          <label className="" for="skillLevel">
+          <label className="checkboxcolor" for="skillLevel">
             {" "}
             I am at an advanced skill level
           </label>
           <br />
 
-          <label className="text-lg flex   mt-5" for="funfact">
-            Enter a fun fact about yourself:
+          <label
+            className=""
+            for="funfact">
+            <input required
+              className=""
+              type="text"
+              id="funfact"
+              name="funfact"
+            />
+            <div className="label-text  ">
+              Enter a fun fact about yourself:
+          </div>
+
           </label>
           <br />
-          <input
+          {/* <input
             className="shadow-md block w-full sm:text-sm"
             type="text"
             id="funfact"
             name="funfact"
-          />
+          /> */}
           <br />
 
           {dayOfWeek("Monday")}
@@ -184,12 +236,14 @@ function CreateProfileForm() {
           {dayOfWeek("Saturday")}
           {dayOfWeek("Sunday")}
 
-          <div className="">
-            <button className="submitForm border rounded hover:bg-gray-500 hover:text-white mt-2">
-              Submit Form{" "}
+
+          <button
+          //  className="submitForm border rounded hover:bg-gray-500 hover:text-white mt-2"
+          >
+            Submit Form
             </button>
-          </div>
-          
+
+
         </form>
       </div>
     </>
