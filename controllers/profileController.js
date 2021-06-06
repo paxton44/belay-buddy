@@ -4,7 +4,7 @@ const db = require("../models");
 // Defining methods for the userProfilesController
 module.exports = {
   findAll: function(req, res) {
-    console.log(res)
+    console.log('test')
     db.UserProfile 
       .find(req.query)
       .then(dbModel => res.json(dbModel))
