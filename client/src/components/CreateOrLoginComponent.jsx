@@ -30,7 +30,7 @@ function CreateOrLoginComponent() {
       .then((data) => data.json())
       .then((data) => {
         console.log(data);
-    window.location.href = "/createprofile"
+        window.location.href = "/createprofile"
         // window.location.href = "/" this is my redirect route for after auth, i set it where the slash is
       });
   };

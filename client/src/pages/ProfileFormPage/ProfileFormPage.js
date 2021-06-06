@@ -4,9 +4,8 @@ import "./ProfileForm.css"
 function ProfileFormPage(){
     return (
         <div className="profileform">
-        <CreateProfileForm
-        />
-       </div>
+        <CreateProfileForm />
+        </div>
     )
 }
 
