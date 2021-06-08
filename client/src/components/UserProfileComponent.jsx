@@ -1,5 +1,27 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 function UserProfileComponent() {
+    const [userProfileData, setUserProfileData] = useState([]);
+    // const [allUserProfileData, setAllUserProfileData] = useState([]);
+    useEffect(() => {
+        fetch("/api/userprofile/:id")
+          .then((response) => response.json())
+          .then((userData) => {
+            //   may not need somehthing after dot, run in insomnia
+            setUserProfileData(userData);
+            // setAllUserProfileData(fetchData.results)
+            // setEmployeeArrayFiltered(fetchData.results);
+          });
+      }, []);
+
+    //   useEffect(() => {
+    //     fetch("/api/userprofile/:id")
+    //       .then((response) => response.json())
+    //       .then((allData) => {
+    //         setAllUserProfileData(allData.results)
+    //         // setEmployeeArrayFiltered(fetchData.results);
+    //       });
+    //   }, []);
       
     return (
         <div>
@@ -13,7 +35,7 @@ function UserProfileComponent() {
                 </div>
                 <div className="card-details">
 <p>
-City: Denver
+{`City${userProfileData.City}`}
 </p>
 <p>
 Home gym: Some gym in denver bro, i just told you
