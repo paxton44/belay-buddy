@@ -9,7 +9,6 @@ function CreateProfileForm() {
     clone[e.target.name] = e.target.value;
     setInputsObj(clone);
     // console.log(e)
-    
   };
 
   const handleSubmit = (e) => {
@@ -17,12 +16,12 @@ function CreateProfileForm() {
     console.log(inputsObj);
     alert("form submitted");
 
-    let userProfileData = inputsObj
-    userProfileData.user_id = window.localStorage.getItem("uid")
+    let userProfileData = inputsObj;
+    userProfileData.user_id = window.localStorage.getItem("uid");
 
-    // need to verify that this userprofiledata is logging all the form data, but also is adding the key of user_id 
-    console.log("forminfo",userProfileData)
-    console.log("uid", window.localStorage.getItem("uid"))
+    // need to verify that this userprofiledata is logging all the form data, but also is adding the key of user_id
+    console.log("forminfo", userProfileData);
+    console.log("uid", window.localStorage.getItem("uid"));
     fetch("/api/userprofile", {
       method: "POST",
       body: JSON.stringify(userProfileData),
@@ -33,8 +32,8 @@ function CreateProfileForm() {
     })
       .then((data) => data.json())
       .then((data) => {
-        console.log("formdata",data);
-        window.location.href = "/userprofile"
+        console.log(data);
+        window.location.href = "/userprofile";
       });
   };
 
@@ -43,9 +42,12 @@ function CreateProfileForm() {
       <div>
         <p
           className="day"
-        // className="text-lg daytext"
-        >What is your availability on {day}</p>
-        <select className="checkboxcolor bg-transparent hover:bg-gray-500"
+          // className="text-lg daytext"
+        >
+          What is your availability on {day}
+        </p>
+        <select
+          className="checkboxcolor bg-transparent hover:bg-gray-500"
           // className="dropdown shadow-md mt-1 block sm:text-sm border-gray-900"
           name={`${day}Time`}
           onChange={handleInputs}
@@ -74,26 +76,25 @@ function CreateProfileForm() {
     <>
       <div
         className="maincontainer overflow-scroll "
-      // className="flex"
+        // className="flex"
       >
         <form
           onSubmit={handleSubmit}
           onChange={handleInputs}
-        // className="my-20 p-10 max-w-xl mx-auto shadow-md sm:border-0 md:border md:border-gray-900 text-gray-900 "
+          // className="my-20 p-10 max-w-xl mx-auto shadow-md sm:border-0 md:border md:border-gray-900 text-gray-900 "
         >
           <label
             // className="text-lg flex justify-between items-end"
             for="username"
           >
-            <input required
+            <input
+              required
               // className="shadow-md mt-1 block w-full sm:text-sm"
               type="text"
               id="username"
               name="username"
             />
-            <div className="label-text">
-              Enter User Name:
-            </div>
+            <div className="label-text">Enter User Name:</div>
           </label>
           <br />
           {/* <input
@@ -108,16 +109,14 @@ function CreateProfileForm() {
             // className="text-lg flex justify-between items-end"
             for="firstname"
           >
-            <input required
+            <input
+              required
               // className="shadow-md mt-1 block w-full sm:text-sm"
               type="text"
               id="firstname"
               name="firstname"
             />
-            <div className="label-text">
-              First name:
-          </div>
-
+            <div className="label-text">First name:</div>
           </label>
           <br />
           {/* <input
@@ -130,17 +129,16 @@ function CreateProfileForm() {
 
           <label
             // className="text-lg flex justify-between items-end"
-            for="City">
-            <input required
+            for="City"
+          >
+            <input
+              required
               // className="shadow-md mt-1 block w-full sm:text-sm bg-white"
               type="text"
               id="City"
               name="City"
             />
-            <div className="label-text">
-              Enter City:
-          </div>
-
+            <div className="label-text">Enter City:</div>
           </label>
           <br />
           {/* <input
@@ -155,16 +153,14 @@ function CreateProfileForm() {
             // className="text-lg flex justify-between items-end"
             for="HomeGym"
           >
-            <input required
+            <input
+              required
               // className="shadow-md mt-1 block w-full sm:text-sm"
               type="text"
               id="HomeGym"
               name="HomeGym"
             />
-            <div className="label-text">
-              Enter Home Gym:
-          </div>
-
+            <div className="label-text">Enter Home Gym:</div>
           </label>
           <br />
           {/* <input
@@ -228,16 +224,13 @@ function CreateProfileForm() {
               name="skillLevel"
               value="Advanced"
             />
-            <div className="label-text">
-              I am at an advanced skill level
-          </div>
+            <div className="label-text">I am at an advanced skill level</div>
           </label>
           <br />
 
-          <label
-            className=""
-            for="funfact">
-            <input required
+          <label className="" for="funfact">
+            <input
+              required
               className=""
               type="text"
               id="funfact"
@@ -245,7 +238,7 @@ function CreateProfileForm() {
             />
             <div className="label-text height ">
               Enter a fun fact about yourself:
-          </div>
+            </div>
           </label>
           <br />
           {/* <input
@@ -264,14 +257,11 @@ function CreateProfileForm() {
           {dayOfWeek("Saturday")}
           {dayOfWeek("Sunday")}
 
-
           <button
           //  className="submitForm border rounded hover:bg-gray-500 hover:text-white mt-2"
           >
             Submit Form
-            </button>
-
-
+          </button>
         </form>
       </div>
     </>

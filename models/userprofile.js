@@ -58,6 +58,8 @@ const ProfileSchema = new Schema({
     type: String,
     required: true,
   },
+  // combines id from user model to ensure user signed in matches correct profile
+  user_id: [{ type: Schema.Types.ObjectId, ref: "User" }],
 });
 
 const UserProfile = mongoose.model("UserProfile", ProfileSchema);
