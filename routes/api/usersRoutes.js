@@ -44,6 +44,10 @@ router.post('/register', function(req, res){
 
     User.createUser(newUser, function(err, user){
       if(err) throw err;
+      passport.authenticate('local'),
+      function(req, res) {
+        res.send(user);
+      }
       res.send(user).end()
     });
   

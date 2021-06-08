@@ -1,5 +1,5 @@
 import UserProfileComponent from "../components/UserProfileComponent"
-
+import { useEffect, useState } from "react";
 let gymUsers = [
     {
         userName: "AllFather",
@@ -120,14 +120,29 @@ let gymUsers = [
     },
 ];
 function LandingPageComponent() {
+    // const [allUserProfileData, setAllUserProfileData] = useState([]);
+    //     useEffect(() => {
+    //     fetch("/api/userprofile/:id")
+    //     .then((response) => response.json())
+    //     .then((allData) => {
+    //         setAllUserProfileData(allData.results)
+    //         // setEmployeeArrayFiltered(fetchData.results);
+    //     });
+    // }, []);
+
+    {/* create state in this  that contains both sides of my screen */}
     return (
         <div>
             {/* 40% page space userprofilecomponent */}
+            
             <div className="h-screen mt-4 ml-2 grid grid-cols-5 gap-4 ">
                 
-                <div className="  col-span-2">
+                <div className="col-span-2">
+                    {/* pass state to userprofilefcomponent */}
                     <UserProfileComponent />
                 </div>
+
+                {/* in bottom portion/right side. we set state directly */}
                 <div className=" mr-2 col-span-3 border-2 overflow-scroll">
                     <div className="bg-red-400 rounded border-solid  grid grid-cols-4 gap-4">
                         <div>
@@ -147,8 +162,7 @@ function LandingPageComponent() {
                         return (
                             <div key={index} className="bg-red-400 rounded border-b-2 border-black">
                                 <div className="grid grid-cols-4 gap-4">
-                                    <div >
-                                    
+                                    <div >                                    
                                         <img className="rounded-full " src={each.img}
                                         alt="user"/>                                      
                                         <p className="pl-1">{each.userName} {each.city}</p>

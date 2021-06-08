@@ -9,6 +9,7 @@ function CreateProfileForm() {
     clone[e.target.name] = e.target.value;
     setInputsObj(clone);
     // console.log(e)
+    
   };
 
   const handleSubmit = (e) => {
@@ -16,9 +17,15 @@ function CreateProfileForm() {
     console.log(inputsObj);
     alert("form submitted");
 
+    let userProfileData = inputsObj
+    userProfileData.user_id = window.localStorage.getItem("uid")
+
+    // need to verify that this userprofiledata is logging all the form data, but also is adding the key of user_id 
+    console.log("forminfo",userProfileData)
+    console.log("uid", window.localStorage.getItem("uid"))
     fetch("/api/userprofile", {
       method: "POST",
-      body: JSON.stringify(inputsObj),
+      body: JSON.stringify(userProfileData),
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -168,40 +175,62 @@ function CreateProfileForm() {
           /> */}
           <br />
 
-          <input
-            className="shadow-md mt-1"
+          {/* <input
+            className="mt-1"
             type="checkbox"
             id="skillLevel"
             name="skillLevel"
             value="Beginner"
-          />
+          /> */}
           <label className="checkboxcolor" for="skillLevel">
-            {" "}
-            I am a beginner! Help me learn please.
+            <input
+              className="mt-1"
+              type="checkbox"
+              id="skillLevel"
+              name="skillLevel"
+              value="Beginner"
+            />
+            <div className="label-text">
+              I am a beginner! Help me learn please.
+            </div>
           </label>
           <br />
 
-          <input
+          {/* <input
             type="checkbox"
             id="skillLevel"
             name="skillLevel"
             value="Intermediate"
-          />
+          /> */}
           <label className="checkboxcolor" for="skillLevel">
-            {" "}
-            I am at an intermediate skill level
+            <input
+              type="checkbox"
+              id="skillLevel"
+              name="skillLevel"
+              value="Intermediate"
+            />
+            <div className="label-text">
+              I am at an intermediate skill level
+            </div>
           </label>
           <br />
 
-          <input
+          {/* <input
             type="checkbox"
             id="skillLevel"
             name="skillLevel"
             value="Advanced"
-          />
+          /> */}
           <label className="checkboxcolor" for="skillLevel">
-            {" "}
-            I am at an advanced skill level
+            <input
+              type="checkbox"
+              id="skillLevel"
+              name="skillLevel"
+              value="Advanced"
+            />
+            <div className="label-text">
+              I am at an advanced skill level
+          </div>
           </label>
           <br />
 
@@ -214,10 +243,9 @@ function CreateProfileForm() {
               id="funfact"
               name="funfact"
             />
-            <div className="label-text  ">
+            <div className="label-text height ">
               Enter a fun fact about yourself:
           </div>
-
           </label>
           <br />
           {/* <input
