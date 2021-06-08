@@ -30,6 +30,7 @@ function CreateOrLoginComponent() {
       .then((data) => data.json())
       .then((data) => {
         console.log(data);
+        window.localStorage.setItem("uid", data._id)
         window.location.href = "/createprofile"
         // window.location.href = "/" this is my redirect route for after auth, i set it
       });

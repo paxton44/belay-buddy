@@ -1,7 +1,7 @@
 import UserProfileComponent from "../../components/UserProfileComponent";
 import "./UserProfile.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-function UserProfilePage(props) {
+function UserProfilePage() {
   return (
     <div className="card card-top card-details ">
       <UserProfileComponent />

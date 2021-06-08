@@ -8,13 +8,22 @@ module.exports = {
     db.UserProfile 
       .find(req.query)
       .then(dbModel => res.json(dbModel))
-      .catch(err => res.status(422).json(err));
+      .catch(err => {
+        console.log(err)
+        res.status(422).json(err)
+      });
   },
   
   findById: function (req, res) {
-    db.UserProfile.findById(req.params.id)
-      .then((dbModel) => res.json(dbModel))
-      .catch((err) => res.status(422).json(err));
+    db.UserProfile.find({user_id:req.params.id})
+      .then((dbModel) => { 
+        console.log(dbModel)
+        res.json(dbModel)}
+        )
+      .catch((err) => {
+        console.log(err)
+        res.status(422).json(err)
+        });
   },
   //Save profile into database
   create: function (req, res) {

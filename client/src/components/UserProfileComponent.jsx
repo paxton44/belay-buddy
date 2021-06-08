@@ -1,28 +1,21 @@
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+
 function UserProfileComponent() {
-    const [userProfileData, setUserProfileData] = useState([]);
+    const [userProfileData, setUserProfileData] = useState({});
     // const [allUserProfileData, setAllUserProfileData] = useState([]);
     useEffect(() => {
-        fetch("/api/userprofile/:id")
-          .then((response) => response.json())
-          .then((userData) => {
-            //   may not need somehthing after dot, 
-            setUserProfileData(userData);
-            // setAllUserProfileData(fetchData.results)
-            // setEmployeeArrayFiltered(fetchData.results);
-          });
-      }, []);
+        fetch(`/api/userprofile/${window.localStorage.getItem("uid")}`)
+            .then((response) => response.json())
+            .then((userData) => {
+                console.log(userData)
+                //   may not need somehthing after dot, run in insomnia
+                setUserProfileData(userData[0]);
+                // setAllUserProfileData(fetchData.results)
+                // setEmployeeArrayFiltered(fetchData.results);
+            });
+    }, []);
 
-    //   useEffect(() => {
-    //     fetch("/api/userprofile/:id")
-    //       .then((response) => response.json())
-    //       .then((allData) => {
-    //         setAllUserProfileData(allData.results)
-    //         // setEmployeeArrayFiltered(fetchData.results);
-    //       });
-    //   }, []);
-      
     return (
         <div>
             <div className="card h-screen">
@@ -34,27 +27,29 @@ function UserProfileComponent() {
                     <p>future dev- phone number goes here</p>
                 </div>
                 <div className="card-details">
-<p>
-{`City${userProfileData.City}`}
+                    <p>
+                        {`City: ${userProfileData.City}`}
+                    </p>
+                    <p>
+                    {`Home Gym: ${userProfileData.HomeGym}`}
+                        
 </p>
-<p>
-Home gym: Some gym in denver bro, i just told you
+                    <p>
+                    {`Skill Level: ${userProfileData.skillLevel}`}
+                        
 </p>
-<p>
-skill level: I'm aight
+                    <p>
+                        fun fact: Im not actually "aight" :-P
 </p>
-<p>
-fun fact: Im not actually "aight" :-P
-</p>
-{/* make an or statement that says if no info add placeholder or something */}
-<p>Times Available:</p>
-<p>Monday:7</p> 
-<p>Tuesday:8</p>
-<p>Wednesday:9</p>
-<p>Thursday:10</p>
-<p>Friday:11</p>
-<p>Saturday:12</p>
-<p>Sunday:1</p>
+                    {/* make an or statement that says if no info add placeholder or something */}
+                    <p>Times Available:</p>
+                    <p>Monday:7</p>
+                    <p>Tuesday:8</p>
+                    <p>Wednesday:9</p>
+                    <p>Thursday:10</p>
+                    <p>Friday:11</p>
+                    <p>Saturday:12</p>
+                    <p>Sunday:1</p>
                 </div>
             </div>
         </div>
