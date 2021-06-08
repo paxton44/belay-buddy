@@ -7,7 +7,7 @@ function UserProfileComponent() {
         fetch("/api/userprofile/:id")
           .then((response) => response.json())
           .then((userData) => {
-            //   may not need somehthing after dot, run in insomnia
+            //   may not need somehthing after dot, 
             setUserProfileData(userData);
             // setAllUserProfileData(fetchData.results)
             // setEmployeeArrayFiltered(fetchData.results);
