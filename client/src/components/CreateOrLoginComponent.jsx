@@ -32,7 +32,7 @@ function CreateOrLoginComponent() {
         console.log(data);
         window.localStorage.setItem("uid", data._id)
         window.location.href = "/createprofile"
-        // window.location.href = "/" this is my redirect route for after auth, i set it where the slash is
+        // window.location.href = "/" this is my redirect route for after auth, i set it
       });
   };
 
