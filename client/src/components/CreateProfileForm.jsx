@@ -33,7 +33,7 @@ function CreateProfileForm() {
     })
       .then((data) => data.json())
       .then((data) => {
-        console.log(data);
+        console.log("formdata",data);
         window.location.href = "/userprofile"
       });
   };
