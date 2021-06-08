@@ -3,16 +3,16 @@ import { useEffect, useState } from "react";
 function UserProfileComponent() {
     const [userProfileData, setUserProfileData] = useState([]);
     // const [allUserProfileData, setAllUserProfileData] = useState([]);
-    // useEffect(() => {
-    //     fetch("/api/userprofile/:id")
-    //       .then((response) => response.json())
-    //       .then((userData) => {
-    //         //   may not need somehthing after dot, run in insomnia
-    //         setUserProfileData(userData);
-    //         // setAllUserProfileData(fetchData.results)
-    //         // setEmployeeArrayFiltered(fetchData.results);
-    //       });
-    //   }, []);
+    useEffect(() => {
+        fetch("/api/userprofile/:id")
+          .then((response) => response.json())
+          .then((userData) => {
+            //   may not need somehthing after dot, run in insomnia
+            setUserProfileData(userData);
+            // setAllUserProfileData(fetchData.results)
+            // setEmployeeArrayFiltered(fetchData.results);
+          });
+      }, []);
 
     //   useEffect(() => {
     //     fetch("/api/userprofile/:id")
