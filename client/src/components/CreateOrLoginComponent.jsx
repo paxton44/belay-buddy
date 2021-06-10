@@ -51,88 +51,84 @@ function CreateOrLoginComponent() {
           </div>
 
           <form onSubmit={handleSubmit}>
-          
+
 
             <h1 className="mb-8 text-3xl text-white text-center">Sign up</h1>
             {/* <form onSubmit={handleSubmit}> */}
-              <input
+            <input
               style={{ backgroundColor: "#ECAB3E" }}
-                onChange={handleInputs}
-                type="text"
-                className="placeholder-red-700  opacity-50 font-bold block w-full p-3 rounded mb-4"
-                name="fullname"
-                placeholder="Full Name"
-              />
+              onChange={handleInputs}
+              type="text"
+              className="hover:opacity-75 focus:opacity-75 placeholder-black opacity-50 font-bold text-xl block w-full p-3 rounded mb-4"
+              name="fullname"
+              placeholder="Full Name"
+            />
 
 
             <input
-                style={{ backgroundColor: "#ECAB3E" }}
-                onChange={handleInputs}
-                type="text"
-                className=" placeholder-red-700  opacity-50 font-bold block w-full p-3 rounded mb-4"
-                name="username"
-                placeholder="Create a username"
-              />
+              style={{ backgroundColor: "#ECAB3E" }}
+              onChange={handleInputs}
+              type="text"
+              className="hover:opacity-75 focus:opacity-75 font-bold text-xl placeholder-black opacity-50 font-bold block w-full p-3 rounded mb-4"
+              name="username"
+              placeholder="Create a username"
+            />
 
-              <input
-                style={{ backgroundColor: "#ECAB3E" }}
-                onChange={handleInputs}
-                type="text"
-                className=" placeholder-red-700  opacity-50 font-bold block w-full p-3 rounded mb-4"
-                name="email"
-                placeholder="Email"
-              />
+            <input
+              style={{ backgroundColor: "#ECAB3E" }}
+              onChange={handleInputs}
+              type="text"
+              className="hover:opacity-75 focus:opacity-75 font-bold text-xl placeholder-black opacity-50 font-bold block w-full p-3 rounded mb-4"
+              name="email"
+              placeholder="Email"
+            />
 
-              <input
-                style={{ backgroundColor: "#ECAB3E" }}
-                onChange={handleInputs}
-                type="password"
-                className="placeholder-red-700  opacity-50 font-bold block  w-full p-3 rounded mb-4"
-                name="password"
-                placeholder="Password"
-              />
-              <input
-                style={{ backgroundColor: "#ECAB3E" }}
-                onChange={handleInputs}
-                type="password"
-                className="placeholder-red-700  opacity-50 font-bold block  w-full p-3 rounded mb-4"
-                name="confirm_password"
-                placeholder="Confirm Password"
-              />
+            <input
+              style={{ backgroundColor: "#ECAB3E" }}
+              onChange={handleInputs}
+              type="password"
+              className="hover:opacity-75 focus:opacity-75 font-bold text-xl placeholder-black opacity-50 font-bold block  w-full p-3 rounded mb-4"
+              name="password"
+              placeholder="Password"
+            />
 
-              <button
-                type="submit"
-                className="w-full text-center py-3 rounded bg-green text-red-700 font-bold hover:bg-blue-500 focus:outline-none my-1"
-              >
-                Create Account
+            <input
+              style={{ backgroundColor: "#ECAB3E" }}
+              onChange={handleInputs}
+              type="password"
+              className="hover:opacity-75 focus:opacity-75 font-bold text-xl placeholder-black opacity-50 font-bold block  w-full p-3 rounded mb-4"
+              name="confirm_password"
+              placeholder="Confirm Password"
+            />
+
+            <button
+              style={{ backgroundColor: "#ECAB3E" }}
+              type="submit"
+              className="hover:opacity-75 focus:opacity-75 font-bold text-xl opacity-50 bg w-full text-center py-3 rounded text-black font-bold hover:opacity-100 focus:outline-none my-1"
+            >
+              Create Account
               </button>
-            {/* </form> */}
-            <div className="App">
-              <button onClick={testapi}>Test API</button>
-            </div>
 
-            <div className="text-center text-lg text-red-700 mt-4">
-              By signing up, you agree to the
-              <button
-                className="no-underline border-b border-grey-dark text-grey-dark"
-                href="#"
-              >
-                Terms of Service
-              </button>{" "}
-              anda
-              <button
-                className="no-underline border-b border-grey-dark text-grey-dark"
-                href="#"
-              >
-                Privacy Policy
-              </button>
-            </div>
           </form>
-
-          <div className="text-red-700 text-lg  mt-6">
-            Already have an account?
+          <div style={{ backgroundColor: "#ECAB3E" }}
+            className="hover:opacity-75 focus:opacity-75 rounded opacity-50 text-center text-lg text-black font-bold mt-4">
+            By signing up, you agree to the
+              <button
+              className="font-bold"
+              href="#"
+            >
+              Terms of Service
+              </button>{" "}
+              and {""}
+              <button
+              className="font-bold"
+              href="#"
+            >
+              Privacy Policy
+              </button>
+              Already have an account?
             <Link to="login">
-              <span className="no-underline border-b border-blue text-blue">
+              <span className="hover:bg-white ">
                 Log in
               </span>
             </Link>
