@@ -37,7 +37,7 @@ function LoginOnly() {
       <div className="inset-0 h-screen bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://wallpapercave.com/wp/wp6689710.jpg')"
+            "url('https://firebasestorage.googleapis.com/v0/b/portfoliopix-7a60a.appspot.com/o/tim-trad-tkxqguCmofw-unsplash.jpg?alt=media&token=e0f8e0e4-3641-4d8b-a7f5-7b6cde6a9459')"
         }}
       >
       </div>
@@ -46,7 +46,7 @@ function LoginOnly() {
         <div className="shadow-2xl rounded-lg w-4/5 h-96 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url('https://wallpapercave.com/wp/wp6689710.jpg')"
+              "url('https://firebasestorage.googleapis.com/v0/b/portfoliopix-7a60a.appspot.com/o/tim-trad-tkxqguCmofw-unsplash.jpg?alt=media&token=e0f8e0e4-3641-4d8b-a7f5-7b6cde6a9459')"
           }}>
 
           <div className="grid grid-cols-12 gap-1">
@@ -56,7 +56,7 @@ function LoginOnly() {
                   Daily practice leads to the cultivation of discipline
                         </p>
               </div>
-              <div className="text-gray-400 font-semibold text-xl mb-4">07</div>
+              <div className="text-gray-400 font-semibold text-xl mb-4">Belay Buddy</div>
               <div className="absolute border-gray-400 border-t-4 bottom-0 py-1 px-4 w-4/5"></div>
             </div>
             <div className="col-span-12 sm:col-span-12 md:col-span-5 lg:col-span-5 xxl:col-span-5">
