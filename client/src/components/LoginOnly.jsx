@@ -11,7 +11,24 @@ function LoginOnly() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputsObj);
-  }
+    //post form data to /register route.
+    fetch("/api/users/login", {
+      method: "POST",
+      body: JSON.stringify(inputsObj),
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((data) => data.json())
+      .then((data) => {
+        console.log(data);
+        // window.localStorage.setItem("uid", data._id)
+        // "/:id/userprofile?"
+        window.location.href = "/userprofile"
+        // window.location.href = "/" this is my redirect route for after auth, i set it
+      });
+  };
 
 
   return (
