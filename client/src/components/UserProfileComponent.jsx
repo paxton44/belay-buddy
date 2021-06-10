@@ -8,7 +8,7 @@ function UserProfileComponent() {
         fetch(`/api/userprofile/${window.localStorage.getItem("uid")}`)
             .then((response) => response.json())
             .then((userData) => {
-                console.log("formstuff from post",userData)
+                console.log(userData)
                 //   may not need somehthing after dot, run in insomnia
                 setUserProfileData(userData[0]);
                 // setAllUserProfileData(fetchData.results)
