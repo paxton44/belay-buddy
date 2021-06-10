@@ -64,6 +64,16 @@ function CreateOrLoginComponent() {
                 placeholder="Full Name"
               />
 
+
+            <input
+                style={{ backgroundColor: "#ECAB3E" }}
+                onChange={handleInputs}
+                type="text"
+                className=" placeholder-red-700  opacity-50 font-bold block w-full p-3 rounded mb-4"
+                name="username"
+                placeholder="Create a username"
+              />
+
               <input
                 style={{ backgroundColor: "#ECAB3E" }}
                 onChange={handleInputs}
