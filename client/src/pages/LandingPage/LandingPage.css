@@ -1,18 +1,3 @@
-.landing{
-    background:red;
-}
-
-.landing>table,th,td{
-    border:1px solid black;
-    border-collapse: collapse;
-}
-
-.landing>th,td{
-    padding: 15px;
-}
-
-.landing>table{
-    border-spacing: 5px;
-    margin:20px;
-    
+.grid-text{
+    color:#1d2227
 }

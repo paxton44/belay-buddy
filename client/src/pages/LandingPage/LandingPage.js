@@ -1,10 +1,12 @@
 import "./LandingPage.css"
 import LandingPageComponent from "../../components/LandingPageComponent"
+
 function LandingPage(){
     return(
-        <div className=".landingpage">
-            <LandingPageComponent />
-        </div>
+       <div style={{backgroundColor:"#1d2227"}}> 
+            <LandingPageComponent /></div>
+           
+        
     )
 }
 
