@@ -52,6 +52,7 @@ function CreateProfileForm() {
           name={`${day}Time`}
           onChange={handleInputs}
         >
+          {/* <option>N/A</option> */}
           <option>6am</option>
           <option>7am</option>
           <option>8am</option>
@@ -78,7 +79,7 @@ function CreateProfileForm() {
         className="maincontainer overflow-scroll "
         // className="flex"
       >
-        <form
+        <form style={{backgroundColor:"#468097"}}
           onSubmit={handleSubmit}
           onChange={handleInputs}
           // className="my-20 p-10 max-w-xl mx-auto shadow-md sm:border-0 md:border md:border-gray-900 text-gray-900 "

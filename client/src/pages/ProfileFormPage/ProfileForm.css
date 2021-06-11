@@ -1,6 +1,6 @@
 
 .checkboxcolor{
-    color: #9B9B9B
+    color: #1d2227
 }
 .profileform{
     background-color: #1d2227;
@@ -14,7 +14,7 @@
     letter-spacing: 4px;
     padding-top: 30px;
     text-align: center;
-    color: #9B9B9B
+    color: #1d2227
 }
 
 div.maincontainer{
@@ -28,6 +28,7 @@ div.maincontainer{
     text-align: center;
     border: 1px solid #4A4A4A;
     padding: 30px;
+   
 }
 
 .profileform>div>form>label{
@@ -38,7 +39,7 @@ div.maincontainer{
 }
 
 label .label-text {
-    color: #9B9B9B;
+    color: #1d2227;
     cursor: text;
     font-size: 15px;
     line-height: 20px;
