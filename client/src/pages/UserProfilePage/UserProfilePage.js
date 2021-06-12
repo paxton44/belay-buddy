@@ -4,10 +4,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function UserProfilePage() {
   return (
-    <div style={{backgroundColor:"#1d2227",
+    <div style={{backgroundColor:"#3e4853",
      fontFamily:"'Montserrat', sans-serif"
      }}>
-    <div  className="card bg">
+       {/* style={{position:"absolute", top:"50%", transform:"translateY(-50%)"}}  */}
+    <div className="card bg">
       <UserProfileComponent />
       
       <Link to="landingpage">
