@@ -1,3 +1,7 @@
 .grid-text{
     color:#1d2227
 }
+
+#mainBckgrnd{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/portfoliopix-7a60a.appspot.com/o/topo.jpg?alt=media&token=f9eb6a53-6ae2-4f09-a019-a9dbdedd110f");
+}

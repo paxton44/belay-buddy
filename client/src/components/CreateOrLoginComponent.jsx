@@ -38,7 +38,7 @@ function CreateOrLoginComponent() {
             </div>
           </div>
           <form onSubmit={handleSubmit}>
-            <h1 className="mb-8 text-3xl text-white text-center">Sign up</h1>
+            <h1 className="mb-8 text-3xl text-white text-center"></h1>
             <input
               style={{ backgroundColor: "#ECAB3E" }}
               onChange={handleInputs}

@@ -14,7 +14,7 @@ function LandingPageComponent() {
   return (
     <div
       className="h-screen mt-auto grid xs:grid-cols-1 sm:grid-cols-1  md:grid-cols-5 lg:grid-cols-5 xl-grid-cols-7 gap-4 ">
-      <div className="md:col-span-2 lg:col-span-2 xl-span-3">
+      <div id="mainBckgrnd" className="md:col-span-2 lg:col-span-2 xl-span-3">
         <div className="card bg">
           <UserProfileComponent />
         </div>
