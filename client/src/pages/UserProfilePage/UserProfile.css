@@ -1,14 +1,10 @@
-.bg{
-    
-    background-color:white;
-    
+.bg{   
+    background-color:white;   
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  /* max-height: 500px; */
-  /* margin: auto; */
   height: auto;
   text-align: center;
   color:#1d2227;
@@ -46,8 +42,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    /* background-color: #ECAB3E; */
-    /* background-color: #468097 ; */
     background-blend-mode:hard-light;
     background-color:#388050;
     font-family:'Montserrat', sans-serif;

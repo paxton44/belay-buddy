@@ -33,8 +33,10 @@ function CreateProfileForm() {
         >
           What is your availability on {day}
         </p>
+   
+   
         <select
-          className="checkboxcolor bg-transparent hover:bg-gray-500"
+          className="checkboxcolor bg-transparent "
           name={`${day}Time`}
           onChange={handleInputs}
         >
@@ -68,7 +70,6 @@ function CreateProfileForm() {
           <label for="username">
             <input
               required
-              // className="shadow-md mt-1 block w-full sm:text-sm"
               type="text"
               id="username"
               name="username" />
