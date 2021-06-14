@@ -19,9 +19,9 @@ function CreateOrLoginComponent() {
       },
     })
       .then((data) => data.json())
-      .then((data) => {        
+      .then((data) => {
         window.localStorage.setItem("uid", data._id)
-        window.location.href = "/createprofile"    
+        window.location.href = "/createprofile"
       });
   };
 
@@ -85,25 +85,25 @@ function CreateOrLoginComponent() {
               className="font-bold text-xl opacity-75 bg w-full text-center py-3 rounded text-black font-bold hover:opacity-100 focus:outline-none my-1"
             >
               Create Account
-              </button>
+            </button>
           </form>
           <div style={{ backgroundColor: "#ECAB3E" }}
             className="rounded opacity-75 text-center text-lg text-black font-bold mt-4">
             By signing up, you agree to the
-              <button
+            <button
               className="font-bold"
               href="#"
             >
               Terms of Service
-              </button>{" "}
-              and {""}
-              <button
+            </button>{" "}
+            and {""}
+            <button
               className="font-bold"
               href="#"
             >
               Privacy Policy
-              </button>
-              Already have an account?
+            </button>
+            Already have an account?
             <Link to="login">
               <span className="hover:bg-white ">
                 Log in

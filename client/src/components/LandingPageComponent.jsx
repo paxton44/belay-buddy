@@ -11,20 +11,19 @@ function LandingPageComponent() {
       });
   }, []);
 const logOut = () => {
-  // clear local storage then relocate
+
   fetch("/api/users/logout")
-  // res.redirect('/register');
+
   window.location.href = "/"
-  console.log("works")
 }
 
   return (
     <div id="mainBckgrnd"
       className="h-screen mt-auto grid xs:grid-cols-1 sm:grid-cols-1  md:grid-cols-5 lg:grid-cols-5 xl-grid-cols-7 gap-4 ">
       <div className="grid justify-items-center md:col-span-2 lg:col-span-2 xl-span-3">
-        <div className="card bg ">
+        <div className="card my-auto bg ">
           <UserProfileComponent />
-          <button onClick={() =>logOut()}>Log Out</button>
+          <button className="border-b-4 shadow-inner mt-1 hover:bg-blue-300 focus:outline font-bold w-full text-center py-3 rounded"  onClick={() =>logOut()}>Log Out</button>
         </div>
       </div>
       <div className="text-center grid-text mr-2  md:col-span-3 lg:col-span-3 xl-col-span-4 overflow-scroll">

@@ -9,12 +9,9 @@
   -o-background-size: cover;
   background-size: cover;
   background-color: #ECAB3E;
-  /* background-color: #468097 ; */
   background-blend-mode:color-burn;
-  /* background-color:#3e4853; */
   font-family:'Montserrat', sans-serif 
 }
-/* below code is to style the dayofweek function */
 .day{
     font-family: 'Montserrat', sans-serif;
     display: block;
@@ -33,7 +30,7 @@ div.maincontainer{
 
 .profileform>div>form{
     text-align: center;
-    /* border: 1px solid #4A4A4A; */
+
     padding: 30px;
    
 }
