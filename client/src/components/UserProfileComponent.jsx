@@ -10,7 +10,7 @@ function UserProfileComponent() {
             });
     }, []);
     return (
-<div className="card">
+<div className="card ">
   <img src={"https://firebasestorage.googleapis.com/v0/b/project-images-5c20b.appspot.com/o/thorsmilingsquare.jpeg?alt=media&token=25696a9e-72a6-4b32-8e5c-c8bb9bd7a140"} alt="John" style={{width:"100%"}} />
   <h1>{`User Name: ${userProfileData.username}`}</h1>
   <p className="title">{`Comfortable climbing with other genders: ${userProfileData.funfact}`}</p>

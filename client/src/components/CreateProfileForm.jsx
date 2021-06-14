@@ -62,7 +62,7 @@ function CreateProfileForm() {
     <>
       <div
         className="maincontainer overflow-scroll">
-        <form style={{backgroundColor:"#468097"}}
+        <form style={{backgroundColor:"#1d2227"}}
           onSubmit={handleSubmit}
           onChange={handleInputs}>
           <label for="username">

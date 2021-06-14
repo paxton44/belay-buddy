@@ -3,5 +3,12 @@
 }
 
 #mainBckgrnd{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/portfoliopix-7a60a.appspot.com/o/topo.jpg?alt=media&token=f9eb6a53-6ae2-4f09-a019-a9dbdedd110f");
+    background: url("https://firebasestorage.googleapis.com/v0/b/portfoliopix-7a60a.appspot.com/o/topo.jpg?alt=media&token=f9eb6a53-6ae2-4f09-a019-a9dbdedd110f") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family:'Montserrat', sans-serif;
+    
 }

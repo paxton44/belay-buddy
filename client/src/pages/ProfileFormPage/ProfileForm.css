@@ -1,11 +1,18 @@
 
 .checkboxcolor{
-    color: #1d2227
+    color: #ECAB3E
 }
 .profileform{
-    background-color: #1d2227;
-  /* height: 100vh; */
-  font-family: 'Montserrat', sans-serif; 
+  background: url("https://firebasestorage.googleapis.com/v0/b/portfoliopix-7a60a.appspot.com/o/topo.jpg?alt=media&token=f9eb6a53-6ae2-4f09-a019-a9dbdedd110f") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #ECAB3E;
+  /* background-color: #468097 ; */
+  background-blend-mode:color-burn;
+  /* background-color:#3e4853; */
+  font-family:'Montserrat', sans-serif 
 }
 /* below code is to style the dayofweek function */
 .day{
@@ -14,7 +21,7 @@
     letter-spacing: 4px;
     padding-top: 30px;
     text-align: center;
-    color: #1d2227
+    color: #ECAB3E
 }
 
 div.maincontainer{
@@ -26,7 +33,7 @@ div.maincontainer{
 
 .profileform>div>form{
     text-align: center;
-    border: 1px solid #4A4A4A;
+    /* border: 1px solid #4A4A4A; */
     padding: 30px;
    
 }
@@ -39,7 +46,7 @@ div.maincontainer{
 }
 
 label .label-text {
-    color: #1d2227;
+    color: #ECAB3E;
     cursor: text;
     font-size: 15px;
     line-height: 20px;
@@ -90,8 +97,8 @@ label .label-text {
 
   .profileform>div>form>button {
     background: transparent;
-    color: #F0F0F0;
-    border: 2px solid #F0F0F0;
+    color: #ECAB3E;
+    border: 2px solid #ECAB3E;
     font-size: 15px;
     letter-spacing: 2px;
     padding: 20px 75px;

@@ -4,17 +4,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function UserProfilePage() {
   return (
-    <div id="backgroundFull" style={{backgroundColor:"#3e4853",
-     fontFamily:"'Montserrat', sans-serif"
-     }}>
-       {/* style={{position:"absolute", top:"50%", transform:"translateY(-50%)"}}  */}
+    <div id="backgroundFull">
        
-    <div className="card bg">
+    <div className="mx-auto align-items-center card bg ">
    
       <UserProfileComponent />
       
       <Link to="landingpage">
-        <button className="mt-1 focus:outline-none font-bold w-full text-center py-3 rounded">
+        <button className="border-b-4 shadow-inner mt-1 hover:bg-blue-300 focus:outline font-bold w-full text-center py-3 rounded">
           Enter BelayBuddy
         </button>
       </Link>

@@ -2,19 +2,18 @@
     
     background-color:white;
     
-   
 }
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: auto;
+  /* max-height: 500px; */
+  /* margin: auto; */
+  height: auto;
   text-align: center;
   color:#1d2227;
-  padding: 30px;
+  padding: 30px; 
   
-
-
 }
 
 .title {
@@ -42,29 +41,16 @@
   }
 
   #backgroundFull {
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/portfoliopix-7a60a.appspot.com/o/topo.jpg?alt=media&token=f9eb6a53-6ae2-4f09-a019-a9dbdedd110f");
+    background: url("https://firebasestorage.googleapis.com/v0/b/portfoliopix-7a60a.appspot.com/o/topo.jpg?alt=media&token=f9eb6a53-6ae2-4f09-a019-a9dbdedd110f") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-color: #ECAB3E; */
+    /* background-color: #468097 ; */
+    background-blend-mode:hard-light;
+    background-color:#388050;
+    font-family:'Montserrat', sans-serif;
+    height: 100vh;
   }
 
-/* .card-top {
-  margin: 0px;
-  color: black;
-  background-color: red;
-  padding: 12px;
-  text-align: center;
-}
-.card-details {
-  margin: 12px;
-  border-radius: 4px;
-  background-color: white;
-  max-width: 100%;
-  font-size: 10px;
-}
-.card-details > p {
-  padding: 5px;
-}
-
-.card > div > img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-} */
