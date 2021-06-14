@@ -74,7 +74,10 @@ router.get('/logout', function(req, res){
   res.send(null)
 });
 
-
+// router.get('/logout', function(req, res){
+//   req.logout();
+//   res.redirect('/register');
+// });
 
 
 
