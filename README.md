@@ -6,6 +6,7 @@ This project creates an application which allows a user to view and schedule tim
 
 Upon entering the site, the user is prompted to sign up and create an account, which saves their information securely using Passport JS. After initial sign up, the user is prompted to create a profile where they will provide their local gym location and times they are available to climb throughout the week. They will then be sent to the main landing page where they can view other users of Belay Buddy and have the opportunity to contact and schedule a possible time to climb. 
 
+Check out the demo [here](https://drive.google.com/file/d/1ikJFGkNK2Xt7bPuYxJmJn6yohxJAw1Ht/view)!
 
 ## Table of Contents
 
